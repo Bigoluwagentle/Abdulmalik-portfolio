@@ -20,9 +20,7 @@ const ecc = document.getElementById("ecc");
 const experience = document.getElementById("experience");
 const complete = document.getElementById("complete");
 const support = document.getElementById("Support");
-const faceboo = document.getElementById("faceboo");
-const twii = document.getElementById("twii");
-const face2 = document.getElementById("face2");
+const iconClose = document.getElementById("icon-close");
 function downloadPDF() {
     const link = document.createElement('a');
     link.download = 'Abdulmalik-CV.pdf';
@@ -78,7 +76,7 @@ web.onclick = function(){
     addUrl("https://webapp-xi-five.vercel.app");
 }
 lan.onclick = function(){
-    addUrl("https://bagtaf-react.vercel.app");
+    addUrl("https://web3x-app-imranmusaayomides-projects.vercel.app");
 }
 email.onclick = function(){
     // addUrl("mailto:abdrosheedabdmalikadgmail.com");
@@ -87,37 +85,64 @@ email.onclick = function(){
 ecc.onclick = function(){
     addUrl("https://e-ccomerce-website-omega.vercel.app/");
 }
-twii.onclick = function(){
-    addUrl("https://x.com/broskiprop94216");
-}
-face2.onclick = function(){
-    addUrl("https://www.facebook.com/base.man.304047");
-}
+
 sun.onclick = function(){
     sun.style.display = "none";
-    moon.style.display = "inline-block";
+    moon.style.display = "inline";
     container.style.backgroundColor = "white";
     document.querySelector("body").style.color = "#0f1117";
     twi.src = "img/icon-twitter-dark.svg";
     face.src = "img/icon-facebook-dark.svg";
     experience.src = "img/user-3-svgrepo-com.svg";
     complete.src = "img/complete.webp";
+    iconHamburger.src = "img/icon-ham-dark.svg";
     support.src = "img/icons8-support-51.png";
-    document.querySelectorAll("a").forEach(aa => {
+    iconClose.src = "img/icon-close-dark.svg";
+    document.querySelector("#mobileView > nav").style.backgroundColor = "#0f1117";
+    document.querySelectorAll(".w").forEach(item => {
+        item.style.color = "white";
+    });
+    document.querySelector("#mobileView > nav > a").style.color = "white";
+    document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "#0f1117";
     });
 }
 moon.onclick = function(){
-    sun.style.display = "inline-block";
+    sun.style.display = "inline";
     moon.style.display = "none";
     container.style.backgroundColor = "#0f1117";
     document.querySelector("body").style.color = "white";
+    document.querySelector("#mobileView > nav").style.backgroundColor = "white";
+    document.querySelectorAll(".w").forEach(item => {
+        item.style.color = "#0f1117";
+    });
     twi.src = "img/icon-twitter.svg";
     face.src = "img/icon-facebook.svg";
     experience.src = "img/icons8-popular-man-50.png";
     complete.src = "img/icons8-check-mark.svg";
+    iconHamburger.src = "img/icon-hamburger.svg";
+    iconClose.src = "img/icon-close.svg";
     support.src = "img/icons8-support-50.png"
-    document.querySelectorAll("a").forEach(aa => {
+    document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "white";
     });
+}
+window.onresize = function(){
+    if(window.innerWidth >= "909"){
+        iconHamburger.style.display = "none";
+        iconClose.style.display = "none";
+        document.querySelector("#mobileView").style.display = "none";
+    }else{
+        iconHamburger.style.display = "block";
+    }
+}
+iconHamburger.onclick = function(){
+    iconHamburger.style.display = "none";
+    iconClose.style.display = "block";
+    document.querySelector("#mobileView").style.display = "block";
+}
+iconClose.onclick = function(){
+    iconHamburger.style.display = "block";
+    iconClose.style.display = "none";
+    document.querySelector("#mobileView").style.display = "none";
 }
