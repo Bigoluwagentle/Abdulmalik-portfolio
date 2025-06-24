@@ -22,7 +22,9 @@ const complete = document.getElementById("complete");
 const support = document.getElementById("Support");
 const iconClose = document.getElementById("icon-close");
 function downloadPDF() {
+    const pdfUrl = 'Abdulmalik.pdf';
     const link = document.createElement('a');
+    link.href = pdfUrl;
     link.download = 'Abdulmalik-CV.pdf';
     document.body.appendChild(link);
     link.click();
