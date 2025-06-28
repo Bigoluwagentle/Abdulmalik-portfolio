@@ -21,7 +21,6 @@ const experience = document.getElementById("experience");
 const complete = document.getElementById("complete");
 const support = document.getElementById("Support");
 const iconClose = document.getElementById("icon-close");
-const pic = document.getElementById("pic");
 function downloadPDF() {
     const pdfUrl = 'Abdulmalik-CV.docx';
     const link = document.createElement('a');
@@ -109,8 +108,6 @@ sun.onclick = function(){
     document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "#0f1117";
     });
-    pic.src = "img/light.jpg";
-    // pic.style.height = "500px";
 }
 moon.onclick = function(){
     sun.style.display = "inline";
@@ -131,7 +128,6 @@ moon.onclick = function(){
     document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "white";
     });
-    pic.src = "img/ji.jpg";
 }
 window.onresize = function(){
     if(window.innerWidth >= "909"){
