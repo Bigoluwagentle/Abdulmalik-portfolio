@@ -81,7 +81,6 @@ lan.onclick = function(){
     addUrl("https://web3x-app-imranmusaayomides-projects.vercel.app");
 }
 email.onclick = function(){
-    // addUrl("mailto:abdrosheedabdmalikadgmail.com");
     addUrl(window.location.href = "mailto:abdrosheedabdmalikadgmail.com");
 }
 ecc.onclick = function(){
