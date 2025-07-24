@@ -66,7 +66,7 @@ x.onclick = function(){
     addUrl("https://x.com/broskiprop94216");
 }
 ai.onclick = function(){
-    addUrl("https://medicalai-wine.vercel.app");
+    addUrl("https://nutritionapp-ze9g.vercel.app");
 }
 whatsapp.onclick = function(){
     addUrl("https://wa.me/9076956531");
