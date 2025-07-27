@@ -327,6 +327,15 @@ footer > section > div > button:hover{
         transform: translateY(0);
     }
 }
+#card{
+    transform: scale(0.1);
+    transition: 850ms;
+}
+#card.show{
+    transform: scale(0.9);
+    transform: scale(1);
+    opacity: 1;
+}
 @media screen and (max-width: 909px){
     header .links a.a{
         display: none;

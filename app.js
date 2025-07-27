@@ -21,17 +21,18 @@ const experience = document.getElementById("experience");
 const complete = document.getElementById("complete");
 const support = document.getElementById("Support");
 const iconClose = document.getElementById("icon-close");
+const test = document.querySelectorAll(".test");
 function downloadPDF() {
-    const pdfUrl = 'Abdulmalik-CV.docx';
+    const pdfUrl = 'Abdulmalik_CV.docx';
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'Abdulmalik-CV.docx';
+    link.download = 'Abdulmalik_CV.docx';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 
-const observer = new IntersectionObserver(entries => {
+const observe = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add("show");
@@ -41,7 +42,7 @@ const observer = new IntersectionObserver(entries => {
     threshold: 0.1
 });
 ok.forEach(section => {
-    observer.observe(section);
+    observe.observe(section);
 });
 
 function addUrl(urlin){
@@ -107,6 +108,9 @@ sun.onclick = function(){
     document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "#0f1117";
     });
+    test.forEach(tes => {
+        tes.style.color = "red";
+    });
 }
 moon.onclick = function(){
     sun.style.display = "inline";
@@ -126,6 +130,9 @@ moon.onclick = function(){
     support.src = "img/icons8-support-50.png"
     document.querySelectorAll(".a").forEach(aa => {
         aa.style.color = "white";
+    });
+    test.forEach(tes => {
+        tes.style.color = "blue";
     });
 }
 window.onresize = function(){
@@ -147,3 +154,24 @@ iconClose.onclick = function(){
     iconClose.style.display = "none";
     document.querySelector("#mobileView").style.display = "none";
 }
+const cards = document.querySelectorAll("#card")
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+        // if(entry.isIntersecting) observer.unobserve(entry.target)
+    })
+    }, 
+    {
+        threshold: 0.5,
+    }
+)
+const lastCardObserver = new IntersectionObserver(entries => {
+    const lastCard = entries[0];
+    if(!lastCard.isIntersecting) return
+    lastCardObserver.unobserve(lastCard.target)
+    lastCardObserver.observe(document.querySelector(".card:last-child"))
+}, {})
+lastCardObserver.observe(document.querySelector(".card:last-child"));
+cards.forEach(card => {
+    observer.observe(card);
+});
