@@ -11,7 +11,7 @@ body{
 #container{
     box-shadow: 0 0 10px rgb(28, 26, 26);
     background-color: #0f1117;
-    margin: 20px;
+    width: 100%;
     border-radius: 10px;
 }
 header{
@@ -446,7 +446,7 @@ footer > section > div > button:hover{
         justify-content: space-between;
         position: fixed;
         bottom: 0;
-        width: 90%;
+        width: 100%;
         min-height: 50px;
         > nav{
             display: flex;
@@ -456,13 +456,12 @@ footer > section > div > button:hover{
             background-color: black;
             cursor: pointer;
             border: 2px solid transparent;
-            margin: auto;
             min-width: 15%;
             > a{
                 color: white;
                 text-decoration: none;
                 font-family: poppins;
-                margin-top: 15px;
+                margin-top: 25px;
             }
             
         }
