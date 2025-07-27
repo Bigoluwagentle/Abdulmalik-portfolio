@@ -6,6 +6,7 @@
     <title>Abdulmalik-portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css "/>
 </head>
 <body>
     <div id="container">
@@ -42,10 +43,13 @@
                 <h2 class="you">Hello, I'm</h2>
                 <h1 class="you">Abdulmalik</h1>
                 <h2 class="you">Frontend Developer</h2>
-                <p> who builds modern, responsive websites and interfaces using React, TailwindCSS, and APIs. I focus on clean design and performance.</p>
-                <button onclick="downloadPDF()">Download CV</button>
+                <p>i builds modern, responsive websites and interfaces using React, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</p>
+                <button onclick="downloadPDF()">
+                    <i class="fa-solid fa-download"></i>
+                    Download CV
+                </button>
             </section>
-            <img src="img/ji.jpg" id="card" width="400px" alt="">
+            <img src="img/ji.jpg" id="card" class="change" width="400px" alt="">
         </main>
 
         <nav class="ok" id="card">
@@ -187,11 +191,35 @@
                     <a href="#" target="_blank" id="x" class="a"><img src="img/icon-twitter.svg" id="twi" alt=""></a>
                 </div>
                 <div id="card">
-                    <button id="email">Email</button>
-                    <button id="Whatsapp">Whatsapp</button>
+                    <button id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </button>
+                    <button id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Whatsapp
+                    </button>
                 </div>
             </section>
         </footer>
+        <div id="bottom-bar">
+            <nav>
+                <i class="fa-solid fa-house"></i>
+                <a href="#">HOME</a>
+            </nav>
+            <nav>
+                <i class="fa-solid fa-address-card"></i>
+                <a href="#about">ABOUT</a>
+            </nav>
+            <nav>
+                <i class="fa-solid fa-diagram-project"></i>
+                <a href="#projects">PROJECTS</a>
+            </nav>
+            <nav>
+                <i class="fa-solid fa-address-card"></i>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
 	</div>	
 </body>
 <script src="app.js"></script>

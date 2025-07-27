@@ -22,6 +22,7 @@ const complete = document.getElementById("complete");
 const support = document.getElementById("Support");
 const iconClose = document.getElementById("icon-close");
 const test = document.querySelectorAll(".test");
+const bottombar = document.querySelectorAll("#bottom-bar > nav");
 function downloadPDF() {
     const pdfUrl = 'Abdulmalik_CV.docx';
     const link = document.createElement('a');
@@ -111,6 +112,11 @@ sun.onclick = function(){
     test.forEach(tes => {
         tes.style.color = "red";
     });
+    bottombar.forEach(bot => {
+        bot.style.backgroundColor = "white";
+        bot.style.border = "2px solid black";
+        bot.style.color = "black";
+    });
 }
 moon.onclick = function(){
     sun.style.display = "inline";
@@ -134,6 +140,10 @@ moon.onclick = function(){
     test.forEach(tes => {
         tes.style.color = "blue";
     });
+    bottombar.forEach(bot => {
+        bot.style.backgroundColor = "black";
+        bot.style.border = "2px solid transparent";
+    });
 }
 window.onresize = function(){
     if(window.innerWidth >= "909"){
@@ -145,9 +155,9 @@ window.onresize = function(){
     }
 }
 iconHamburger.onclick = function(){
-    iconHamburger.style.display = "none";
-    iconClose.style.display = "block";
-    document.querySelector("#mobileView").style.display = "block";
+    iconHamburger.style.display = "block";
+    iconClose.style.display = "none";
+    document.querySelector("#mobileView").style.display = "none";
 }
 iconClose.onclick = function(){
     iconHamburger.style.display = "block";
