@@ -86,7 +86,7 @@ email.onclick = function(){
     addUrl(window.location.href = "mailto:abdrosheedabdmalikadgmail.com");
 }
 ecc.onclick = function(){
-    addUrl("https://e-ccomerce-website-omega.vercel.app/");
+    addUrl("https://mmm-movie.vercel.app/");
 }
 
 sun.onclick = function(){
