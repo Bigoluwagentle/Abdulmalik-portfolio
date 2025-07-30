@@ -242,7 +242,6 @@ article > div > nav > button:hover{
     transition: all 1s ease;
 }
 .ok.show{
-    opacity: 0.5;
     transform: translateY(0);
 }
 
