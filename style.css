@@ -199,7 +199,7 @@ article > div > nav,article > nav{
     transition: opacity 0.4s ease, transform 0.9s ease;
 }
 article .land{
-    background-image: url(img/land.jpg);
+    background-image: url(img/job.jpeg);
 }
 article .product{
     background-image: url(img/movie.jpeg);
@@ -339,6 +339,7 @@ footer > section > div > button:hover{
 #card{
     transform: scale(0.1);
     transition: 850ms;
+    color: white;
 }
 #card.show{
     transform: scale(0.9);
@@ -469,8 +470,9 @@ footer > section > div > button:hover{
             > a{
                 color: white;
                 text-decoration: none;
-                font-family: poppins;
+                font-family: Arial, Helvetica, sans-serif;
                 margin-top: 25px;
+                font-size: 13px;
             }
             
         }

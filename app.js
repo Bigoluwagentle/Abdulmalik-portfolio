@@ -58,7 +58,7 @@ function addUrl(urlin){
 }
 
 land.onclick = function(){
-    addUrl("https://manage-landing-page-vzqe.vercel.app");
+    addUrl("https://mmm-job-board.vercel.app/");
 }
 facebook.onclick = function(){
     addUrl("https://www.facebook.com/base.man.304047");
