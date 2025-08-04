@@ -77,7 +77,7 @@ web3.onclick = function(){
     addUrl("https://xend-finance-seven.vercel.app");
 }
 web.onclick = function(){
-    addUrl("https://webapp-xi-five.vercel.app");
+    addUrl("https://too-soft-1xtd.vercel.app");
 }
 lan.onclick = function(){
     addUrl("https://web3x-app-imranmusaayomides-projects.vercel.app");

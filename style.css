@@ -18,6 +18,11 @@ header{
     padding: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* .head > h2::first-letter{
+        color: #135455;
+        text-shadow: 0px 0px 5px white;
+    } */
 }
 .you + p{
     width: 80%;
@@ -216,7 +221,7 @@ article .web3{
     background-image: url(img/download.webp);
 }
 article .web{
-    background-image: url(img/desktop-design-dark.jpg);
+    background-image: url(img/soft.jpeg);
 }
 article .bag{
     background-image: url(img/sweb3.svg);
