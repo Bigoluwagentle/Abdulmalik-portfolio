@@ -39,7 +39,7 @@ function Header(){
             lastCardObserver.unobserve(lastCard.target)
             lastCardObserver.observe(document.querySelector(".card:last-child"))
         }, {})
-        lastCardObserver.observe(document.querySelector(".card:last-child"));
+        // lastCardObserver.observe(document.querySelector(".card:last-child"));
         cards.forEach(card => {
             observer.observe(card);
         });
