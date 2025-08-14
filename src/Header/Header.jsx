@@ -6,23 +6,8 @@ import emily from "../img/image-emily.jpg";
 import thomas from "../img/image-thomas.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
-import hamburger from "../img/icon-hamburger.svg";
-const ok = document.querySelectorAll(".ok");
 function Header(){
     {
-        const observe = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add("show");
-                }
-            });
-            }, {
-            threshold: 0.1
-        });
-        ok.forEach(section => {
-            observe.observe(section);
-        });
-
         const cards = document.querySelectorAll("#card")
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -39,7 +24,7 @@ function Header(){
             lastCardObserver.unobserve(lastCard.target)
             lastCardObserver.observe(document.querySelector(".card:last-child"))
         }, {})
-        // lastCardObserver.observe(document.querySelector(".card:last-child"));
+        lastCardObserver.observe(document.querySelector(".card:last-child"));
         cards.forEach(card => {
             observer.observe(card);
         });
