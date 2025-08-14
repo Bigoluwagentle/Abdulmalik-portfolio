@@ -333,16 +333,6 @@ article .web{
 article .bag{
     background-image: url(/public/AI.jpeg);
 }
-#card{
-    transform: scale(0.1);
-    transition: 850ms;
-    color: white;
-}
-#card.show{
-    transform: scale(0.9);
-    transform: scale(1);
-    opacity: 1;
-}
 #bottom-bar{
     display: none;
 }

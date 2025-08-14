@@ -6,29 +6,9 @@ import emily from "../img/image-emily.jpg";
 import thomas from "../img/image-thomas.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
+// import { useEffect } from "react";
 function Header(){
-    {
-        const cards = document.querySelectorAll("#card")
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting);
-            })
-            }, 
-            {
-                threshold: 0.5,
-            }
-        )
-        const lastCardObserver = new IntersectionObserver(entries => {
-        const lastCard = entries[0];
-            if(!lastCard.isIntersecting) return
-            lastCardObserver.unobserve(lastCard.target)
-            lastCardObserver.observe(document.querySelector(".card:last-child"))
-        }, {})
-        lastCardObserver.observe(document.querySelector(".card:last-child"));
-        cards.forEach(card => {
-            observer.observe(card);
-        });
-    }
+
     function downloadPDF() {
         const pdfUrl = 'Abdulmalik_CV.docx';
         const link = document.createElement('a');
@@ -67,7 +47,7 @@ function Header(){
             </header>
 
             <main class="ok">
-                <section id="card">
+                <section className="card">
                     <h2 class="you">Hello, I'm</h2>
                     <h1 class="you">Abdulmalik</h1>
                     <h2 class="you">Frontend Developer</h2>
@@ -90,7 +70,7 @@ function Header(){
                 </aside>
             </nav>
 
-            <figure class="ok" id="card">
+            <figure class="card" id="card">
                 <div class="card" id="card">
                     <img src="img/icons8-popular-man-50.png" width="30px" alt="" id="experience"/>
                     <h4>Experience</h4>
@@ -108,7 +88,7 @@ function Header(){
                 </div>
             </figure>
 
-            <div id="skill" className="ok">
+            <div id="skill" className="card">
                 <h2>Skills</h2>
                 <section>
                     <nav id="card" className="card">
