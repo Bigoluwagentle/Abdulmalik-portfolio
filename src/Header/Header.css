@@ -306,6 +306,9 @@
                     transition:  background-color 0.2s ease;
                     margin-top: 20px;
                     display: block;
+                    > i{
+                        margin-right: 6px;
+                    }
                     &:hover{
                         background-color: #555555;
                     }
@@ -353,13 +356,15 @@ article .bag{
 nav.check{
     padding: 30px 0px 0px 15px;
 }
-.ok{
-    opacity: 1;
-    transform: translateY(50px);
-    transition: all 1s ease;
+.card{
+    transform: scale(0.1);
+    transition: 850ms;
+    color: white;
 }
-.ok.show{
-    transform: translateY(0);
+.card.show{
+    transform: scale(0.9);
+    transform: scale(1);
+    opacity: 1;
 }
 @keyframes load{
     from{
@@ -383,6 +388,9 @@ nav.check{
     header .links > img{
         cursor: pointer;
         display: block;
+    }
+    header h2{
+        font-size: 18px;
     }
     main{
         flex-direction: column;
@@ -412,11 +420,11 @@ nav.check{
             width: 100%;
         }
     }
-    figure.ok{
+    figure{
         flex-direction: column;
         align-items: center;
     }
-    figure.ok > div{
+    figure > div{
         margin-bottom: 50px;
         min-width: 80%;
     }

@@ -6,9 +6,30 @@ import emily from "../img/image-emily.jpg";
 import thomas from "../img/image-thomas.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
-// import { useEffect } from "react";
+const cards = document.querySelectorAll(".card")
 function Header(){
+    {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting);
+            })
+            }, 
+            {
+                threshold: 0.5,
+            }
+        )
+        const lastCardObserver = new IntersectionObserver(entries => {
+            const lastCard = entries[0];
+            if(!lastCard.isIntersecting) return
+            lastCardObserver.unobserve(lastCard.target)
+            lastCardObserver.observe(document.querySelector(".card:last-child"))
+        }, {})
+        lastCardObserver.observe(document.querySelector(".card:last-child"));
+        cards.forEach(card => {
+            observer.observe(card);
+        });
 
+    }
     function downloadPDF() {
         const pdfUrl = 'Abdulmalik_CV.docx';
         const link = document.createElement('a');
@@ -31,7 +52,7 @@ function Header(){
 
     return(
         <div id="header">
-            <header id="card">
+            <header id="card" className="card">
                 <div className="head" id="card">
                     <h2>ABDULMALIK</h2>
                 </div>
@@ -45,8 +66,7 @@ function Header(){
                 </div>
                 <h2 id="hamburger">PORTFOLIO</h2>
             </header>
-
-            <main class="ok">
+            <main>
                 <section className="card">
                     <h2 class="you">Hello, I'm</h2>
                     <h1 class="you">Abdulmalik</h1>
@@ -70,7 +90,7 @@ function Header(){
                 </aside>
             </nav>
 
-            <figure class="card" id="card">
+            <figure id="card">
                 <div class="card" id="card">
                     <img src="img/icons8-popular-man-50.png" width="30px" alt="" id="experience"/>
                     <h4>Experience</h4>
@@ -88,7 +108,7 @@ function Header(){
                 </div>
             </figure>
 
-            <div id="skill" className="card">
+            <div id="skill">
                 <h2>Skills</h2>
                 <section>
                     <nav id="card" className="card">
@@ -154,7 +174,7 @@ function Header(){
                     </nav>
                 </section>
             </div>
-            <article class="ok" id="projects">
+            <article className="card" id="projects">
                 <div class="ai" id="card">
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
@@ -218,19 +238,19 @@ function Header(){
             </article>
 
             <summary>
-                <nav id="card">
+                <nav id="card" className="card">
                     <img src={thomas} alt=""/>
                     <p class="text"><q>Abdulmalik was a key part of our frontend team. He contributed reusable components, improved performance, and helped debug tricky layout issues. He’s a problem solver who brings great energy to every sprint</q></p>
                     <li class="text">Haaj Eth</li>
                     <p style={{fontSize: "12px"}} class="text">Web3 Director</p>
                 </nav>
-                <nav id="card">
+                <nav id="card" className="card">
                     <img src={jennie} alt=""/>
                     <p class="text"><q>He’s fast, reliable, and knows what he’s doing. Abdulmalik built a e ccomerce for our team in just a few days, and everything worked perfectly. Great communication and strong frontend skills.</q></p>
                     <li class="text">Ayobami</li>
                     <p style={{fontSize: "12px"}} class="text">2Soft E-CCOMERCE</p>
                 </nav>
-                <nav id="card">
+                <nav id="card" className="card">
                     <img src={emily} alt=""/>
                     <p class="text"><q>Abdulmalik exceeded our expectations. He took our Figma design and turned it into a pixel-perfect, mobile-responsive React app. His attention to detail, clean code structure, and smooth integration of APIs made the process effortless.</q></p>
                     <li class="text">Joe Kith</li>
@@ -240,18 +260,18 @@ function Header(){
 
             <footer id="contact">
                 <h2>CONTACT</h2>
-                <section id="card">
+                <section id="card" className="card">
                     <div>
                         <h2>ABDULMALIK</h2>
                     </div>
-                    <div id="card">
+                    <div id="card" className="card">
                         <a href="#" class="a">HOME</a>
                         <a href="#about" class="a">ABOUT</a>
                         <a href="#about" class="a">SKILLS</a>
                         <a href="#projects" class="a">PROJECTS</a>
                         <a href="#contact" class="a">CONTACT</a>
                     </div>
-                    <div id="card">
+                    <div id="card" className="card">
                         <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
                         <a href="#" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
                     </div>
@@ -268,7 +288,7 @@ function Header(){
                 </section>
             </footer>
 
-            <div id="bottom-bar" style={{backgroundColor : "black"}}>
+            <div id="bottom-bar" style={{backgroundColor : "black"}} className="card">
                 <nav>
                     <i class="fa-solid fa-house"></i>
                     <a href="#">HOME</a>
