@@ -1,9 +1,9 @@
 import "./Header.css";
 import ji from "../img/ji.jpg";
 import light from "../img/light.jpg";
-import jennie from "../img/image-jennie.jpg";
+import jennie from "../img/image-thomas.jpg";
 import emily from "../img/image-emily.jpg";
-import thomas from "../img/image-thomas.jpg";
+import thomas from "../img/IMG-20250710-WA0058.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
 import { useEffect } from "react";
@@ -148,14 +148,14 @@ function Header(){
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>REACT</h4>
+                        <h4>REACT.js</h4>
                         <div>
                           <input type="text" value="85%" style={{width: "85%"}} readOnly />  
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>VUE</h4>
+                        <h4>VUE.js</h4>
                         <div>
                           <input type="text" value="60%" style={{width: "60%"}} readOnly />  
                         </div>
@@ -169,7 +169,7 @@ function Header(){
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>Framer</h4>
+                        <h4>Framer Motion</h4>
                         <div>
                           <input type="text" value="45%" style={{width: "45%"}} readOnly />  
                         </div>
