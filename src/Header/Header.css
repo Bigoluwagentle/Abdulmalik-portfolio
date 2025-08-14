@@ -318,36 +318,26 @@
     }
 
 }
-article .land{
+article #land{
     background-image: url(/public/job.jpeg);
 }
-article .product{
+article #product{
     background-image: url(/public/movie.jpeg);
 }
-article .ai{
+article #ai{
     background-image: url(/public/hi.webp);
 }
-article .web3{
+article #web3{
     background-image: url(/public/download.webp);
 }
-article .web{
+article #web{
     background-image: url(/public/soft.jpeg);
 }
-article .bag{
+article #bag{
     background-image: url(/public/AI.jpeg);
 }
 #bottom-bar{
     display: none;
-}
-@keyframes fadeUp{
-    from{
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 .head{
     display: flex;
@@ -441,12 +431,10 @@ nav.check{
         }
     }
     
-    footer{
-        padding-bottom: 100px;
-    }
     footer > section{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 50px;
     }
     footer > section > div{
         margin-bottom: 30px;
@@ -470,6 +458,9 @@ nav.check{
     }
     summary{
         flex-direction: column;
+        > nav{
+            margin-bottom: 40px;
+        }
     }
     article > div > nav{
         opacity: 1;

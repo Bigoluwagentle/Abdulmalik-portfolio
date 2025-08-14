@@ -176,8 +176,8 @@ function Header(){
                     </nav>
                 </section>
             </div>
-            <article className="card" id="projects">
-                <div class="ai" id="card">
+            <article id="projects">
+                <div class="card" id="ai">
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
                         <p>Role: Frontend Developer</p>
@@ -188,7 +188,7 @@ function Header(){
                     </nav>
                 </div>
             
-                <div class="product" id="card">
+                <div class="card" id="product">
                     <nav class="check">
                         <h4>Movie Website</h4>
                         <p>Role: Frontend Developer</p>
@@ -198,7 +198,7 @@ function Header(){
                         <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="land" id="card">
+                <div class="card" id="land">
                     <nav class="check">
                         <h4>Job-Board</h4>
                         <p>Role: Frontend Developer</p>
@@ -208,7 +208,7 @@ function Header(){
                         <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="web" id="card">
+                <div class="card" id="web">
                     <nav class="check">
                         <h4>E-CCOMERCE</h4>
                         <p>Role: Frontend Developer</p>
@@ -218,7 +218,7 @@ function Header(){
                         <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="bag" id="card">
+                <div class="card" id="bag">
                     <nav class="check">
                         <h4>MY AI</h4>
                         <p>Tech:REACT AND API</p>
@@ -227,7 +227,7 @@ function Header(){
                     </nav>
                 </div>
                 
-                <div class="web3" id="card">
+                <div class="card" id="web3">
                     <nav class="check">
                         <h4>Web3 Landing Page</h4>
                         <p>Role: Frontend Developer</p>
