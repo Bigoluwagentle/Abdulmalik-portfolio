@@ -6,9 +6,11 @@ import emily from "../img/image-emily.jpg";
 import thomas from "../img/image-thomas.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
-const cards = document.querySelectorAll(".card")
+import { useEffect } from "react";
 function Header(){
-    {
+    useEffect(() => {
+        const cards = document.querySelectorAll(".card");
+
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 entry.target.classList.toggle("show", entry.isIntersecting);
@@ -28,8 +30,8 @@ function Header(){
         cards.forEach(card => {
             observer.observe(card);
         });
-
-    }
+    }, []);
+    
     function downloadPDF() {
         const pdfUrl = 'Abdulmalik_CV.docx';
         const link = document.createElement('a');
