@@ -7,10 +7,10 @@ import thomas from "../img/IMG-20250710-WA0058.jpg";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
 import { useEffect } from "react";
+import Contact from "../Contact/Contact";
 function Header(){
     useEffect(() => {
         const cards = document.querySelectorAll(".card");
-
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 entry.target.classList.toggle("show", entry.isIntersecting);
@@ -30,6 +30,30 @@ function Header(){
         cards.forEach(card => {
             observer.observe(card);
         });
+        
+        const bars = document.querySelectorAll(".bar span");
+
+        const observers = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const span = entry.target;
+            const percent = parseInt(span.dataset.percent);
+            const label = span.nextElementSibling;
+
+            if (entry.isIntersecting) {
+            span.style.width = percent + "%";
+            let counter = 0;
+            const interval = setInterval(() => {
+                counter++;
+                label.textContent = counter + "%";
+                if (counter >= percent) clearInterval(interval);
+            }, 20);
+            } else {
+            span.style.width = "0";
+            label.textContent = "0%";
+            }
+        });
+        }, { threshold: 0.5 });
+        bars.forEach(bar => observers.observe(bar));
     }, []);
     
     function downloadPDF() {
@@ -115,63 +139,72 @@ function Header(){
                 <section>
                     <nav id="card" className="card">
                         <h4>HTML5</h4>
-                        <div>
-                          <input type="text" value="95%" style={{width: "95%"}} readOnly />  
+                        <div className="bar">
+                            <span data-percent="95">95%</span>
+                            <small>0%</small>
                         </div>
                     </nav>
                     <nav id="card" className="card">
                         <h4>CSS3</h4>
-                        <div>
-                          <input type="text" value="90%" style={{width: "90%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="75">75%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>TAILWIND CSS</h4>
-                        <div>
-                          <input type="text" value="80%" style={{width: "80%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="80">80%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>SASS</h4>
-                        <div>
-                          <input type="text" value="98%" style={{width: "98%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="98">98%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>JAVASCRIPT</h4>
-                        <div>
-                          <input type="text" value="80%" style={{width: "80%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="80">80%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>REACT.js</h4>
-                        <div>
-                          <input type="text" value="85%" style={{width: "85%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="85">85%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>VUE.js</h4>
-                        <div>
-                          <input type="text" value="60%" style={{width: "60%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="60">60%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>GIT</h4>
-                        <div>
-                          <input type="text" value="95%" style={{width: "95%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="95">95%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
 
                     <nav id="card" className="card">
                         <h4>Framer Motion</h4>
-                        <div>
-                          <input type="text" value="45%" style={{width: "45%"}} readOnly />  
+                        <div className="bar">
+                          <span data-percent="45">45%</span>
+                          <small>0%</small>
                         </div>
                     </nav>
                 </section>
@@ -220,10 +253,12 @@ function Header(){
                 </div>
                 <div class="card" id="bag">
                     <nav class="check">
-                        <h4>MY AI</h4>
-                        <p>Tech:REACT AND API</p>
-                        <p>Result: Over 200+ users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://abdulmalik-coding-ai.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <h4>Car Dealer</h4>
+                        <p>Role: Frontend Developer</p>
+                        <p>Tech: REACT AND JAVASCRIPT</p>
+                        <p>Challenge: Deliver real-time suggestions via API</p>
+                        <p>Result: Over 100 test users used it with positive results.</p>  
+                        <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
                 
@@ -259,9 +294,8 @@ function Header(){
                     <p style={{fontSize: "12px"}} class="text">Marketing Director</p>
                 </nav>
             </summary>
-
+            <Contact/>
             <footer id="contact">
-                <h2>CONTACT</h2>
                 <section id="card" className="card">
                     <div>
                         <h2>ABDULMALIK</h2>
@@ -289,7 +323,7 @@ function Header(){
                     </div>
                 </section>
             </footer>
-
+             {/* <Contact/> */}
             <div id="bottom-bar" style={{backgroundColor : "black"}} className="card">
                 <nav>
                     <i class="fa-solid fa-house"></i>

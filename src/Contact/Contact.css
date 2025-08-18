@@ -1,0 +1,29 @@
+#contact2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 150px;
+    > .contact{
+        min-width: 60%;
+        > form{
+            width: 100%;
+            background-color: #FFF;
+            padding: 40px;
+            border-radius: 10px;
+            > nav{
+                margin-bottom: 30px;
+                color: white;
+            }
+            > h2{
+
+                margin-bottom: 50px;
+                color: black;
+            }
+            > TextField{
+                border: 2px solid white;
+            }
+        }
+    }
+}
