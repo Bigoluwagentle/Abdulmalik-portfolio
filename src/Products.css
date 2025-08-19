@@ -1,0 +1,197 @@
+#allProject{
+    > h2{
+        margin-top: 100px;
+        text-align: center;
+    }
+    > article{
+        padding: 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+        > div{
+            position: absolute;
+            backface-visibility: hidden;
+            width: 30%;
+            min-height: 45vh;
+            margin-left: 10px;
+            margin-bottom: 70px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 1s;
+            &:hover{
+                transform: translateY(-20px);
+            }
+            &:hover > nav.check{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            > nav{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                width: 100%;
+                min-height: 45vh;
+                background-color: white;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.4s ease, transform 0.9s ease;
+                > h4{
+                    color: black;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+                > button{
+                    background-color:#135455;
+                    color: #ffffff;
+                    padding: 0.5rem 1.2rem;
+                    border: none;
+                    border-radius: 6px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition:  background-color 0.2s ease;
+                    margin-top: 20px;
+                    &:hover{
+                        background-color: #355555;
+                    }
+                }
+            }
+            > .check{
+                position: absolute;
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+                > p{
+                    line-height: 23px;
+                    font-weight: bold;
+                    color: #135455;
+                }
+            }
+        }
+        .eccomerce{
+            background-image: url("/public/desktop-design.jpg");
+        }
+    }
+
+    summary{
+        display: flex;
+        margin-bottom: 60px;
+        > nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 30%;
+            text-align: center;
+            line-height: 23px;
+            list-style-type: none;
+            > p{
+                font-size: 15px;
+                width: 95%;
+                color: rgb(238, 230, 230);
+            }
+            > li{
+                color: #fff;
+                font-size: 13px;
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            img{
+                width: 60px;
+                border-radius: 100px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+article #land{
+    background-image: url(/public/job.jpeg);
+}
+article #product{
+    background-image: url(/public/movie.jpeg);
+}
+article #ai{
+    background-image: url(/public/hi.webp);
+}
+article #web3{
+    background-image: url(/public/download.webp);
+}
+article #web{
+    background-image: url(/public/soft.jpeg);
+}
+article #bag{
+    background-image: url(/public/Screenshot_18-8-2025_1507_localhost.jpeg);
+}
+#recipe{
+    background-image: url(/public/Screenshot_18-8-2025_102523_localhost.jpeg);
+}
+#alquran{
+    background-image: url(/public/Screenshot_18-8-2025_104114_abdulmalik-phi.vercel.app.jpeg);
+}
+#bottom-bar{
+    display: none;
+}
+#skin{
+    background-image: url(/public/Screenshot_18-8-2025_105440_skin-care-opal.vercel.app.jpeg);
+}
+#hamburger{
+    display: none;
+}
+.card{
+    transform: scale(0.1);
+    transition: 850ms;
+    color: white;
+}
+.card.show{
+    transform: scale(0.9);
+    transform: scale(1);
+    opacity: 1;
+}
+@media screen and (max-width: 909px){
+    #allProject{
+        #hamburger{
+            display: inline-block;
+            cursor: pointer;
+        }
+        header .links a.a{
+            display: none;
+        }
+    }
+    
+    #allProject{
+        > article{
+            flex-direction: column;
+            > div{
+                width: 90%;
+                min-height: 50vh;
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        summary{
+            flex-direction: column;
+            > nav{
+                margin-bottom: 40px;
+            }
+        }
+        article > div > nav{
+            opacity: 1;
+        }
+    }
+}
