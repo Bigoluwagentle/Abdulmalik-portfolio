@@ -6,17 +6,20 @@ import Main from "./Main/Main";
 import Project from "./Projects";
 import Contact from "./Contact/Contact";
 import Bottom from "./BottomBar/Bottom";
+import ScrollToTop from "./ScrollToTop";
+
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      <Header />
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/Skills" element={<Skill/>} />
-        <Route path="/Projects" element={<Project/>} />
-        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/" element={<Main />} />
+        <Route path="/Skills" element={<Skill />} />
+        <Route path="/Projects" element={<Project />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Bottom/>
+      <Bottom />
     </BrowserRouter>
   );
 }
