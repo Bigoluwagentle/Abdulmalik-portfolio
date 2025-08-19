@@ -1,0 +1,38 @@
+
+#footer10{
+    footer{
+        padding: 30px;
+        margin-top: 150px;
+        > section{
+            display: flex;
+            justify-content: space-between;
+            > div{
+                width: 30%;
+                > a{
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                }
+                > button{
+                    background-color: #135455;
+                    color: #ffffff;
+                    padding: 0.5rem 1.2rem;
+                    border: none;
+                    border-radius: 6px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition:  background-color 0.2s ease;
+                    margin-top: 20px;
+                    display: block;
+                    > i{
+                        margin-right: 6px;
+                    }
+                    &:hover{
+                        background-color: #555555;
+                    }
+                }
+            }
+        }
+    }
+}

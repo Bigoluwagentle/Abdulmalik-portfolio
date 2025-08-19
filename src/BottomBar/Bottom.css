@@ -3,6 +3,28 @@
         display: none;
     } 
 }
+#bottom-bar .nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+#bottom-bar .nav-link i {
+    margin-bottom: 5px;
+}
+
+#bottom-bar .nav-link.active {
+  color: #ff9800; 
+}
+
+#bottom-bar .nav-link.active {
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 2px;
+}
 
 @media screen and (max-width:909px){
     #mobileNva{

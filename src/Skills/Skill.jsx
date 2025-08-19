@@ -1,3 +1,4 @@
+import Footer from "../Footer/Footer";
 import "./Skill.css";
 import { useEffect } from "react";
 function Skill(){
@@ -123,6 +124,7 @@ function Skill(){
                     </nav>
                 </section>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import "./Contact.css";
 import { Stack, TextField, Button } from "@mui/material";
 import { useEffect } from "react";
-
 import emailjs from "emailjs-com";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
@@ -29,15 +28,15 @@ function Contact() {
       });
   }, []);
   function addUrl(urlin){
-        let urlink = "";
-        urlink = urlin;
-        const link = document.createElement("a");
-        link.href = urlink;
-        link.target = "_blank";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+    let urlink = "";
+    urlink = urlin;
+    const link = document.createElement("a");
+    link.href = urlink;
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
 

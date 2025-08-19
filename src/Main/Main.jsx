@@ -2,6 +2,7 @@ import "./Main.css";
 import { useEffect } from "react";
 import ji from "../img/ji.jpg";
 import light from "../img/light.jpg";
+import Footer from "../Footer/Footer";
 function Main(){
     useEffect(() => {
         const cards = document.querySelectorAll(".card");
@@ -77,6 +78,7 @@ function Main(){
                     <p>Geegstack Academy</p>
                 </div>
             </figure>
+            <Footer/>
         </div>
     )
 }
