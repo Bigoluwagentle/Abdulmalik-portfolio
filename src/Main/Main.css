@@ -89,35 +89,38 @@
 }
 
 @media screen and (max-width: 909px){
-    main{
-        flex-direction: column;
-        align-items: center;
-    }
-    main > img{
-        width: 300px;
-        margin-top: 60px;
-    }
-    nav.ok{
-        flex-direction: column;
-        align-items: center;
-    }
-    nav{
-        aside.about{
-            width: 100%;
+    #main{
+        main{
+            flex-direction: column;
+            align-items: center;
+        }
+        main > img{
+            width: 300px;
+            margin-top: 60px;
+        }
+        nav.ok{
+            flex-direction: column;
+            align-items: center;
+        }
+        nav{
+            > aside.about{
+                width: 100%;
+            }
+        }
+        nav aside.about{
+            margin-bottom: 50px;
+            > p{
+                width: 100%;
+            }
+        }
+        figure{
+            flex-direction: column;
+            align-items: center;
+        }
+        figure > div{
+            margin-bottom: 50px;
+            min-width: 80%;
         }
     }
-    nav aside.about{
-        margin-bottom: 50px;
-        > p{
-            width: 100%;
-        }
-    }
-    figure{
-        flex-direction: column;
-        align-items: center;
-    }
-    figure > div{
-        margin-bottom: 50px;
-        min-width: 80%;
-    }
+    
 }
