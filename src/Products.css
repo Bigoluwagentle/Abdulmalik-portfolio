@@ -149,6 +149,12 @@ article #bag{
 #skin{
     background-image: url(/public/Screenshot_18-8-2025_105440_skin-care-opal.vercel.app.jpeg);
 }
+#portfolio{
+    background-image: url(/public/Screenshot_19-8-2025_63754_localhost.jpeg);
+}
+#url{
+    background-image: url(/public/Screenshot_19-8-2025_134029_localhost.jpeg);
+}
 #hamburger{
     display: none;
 }
