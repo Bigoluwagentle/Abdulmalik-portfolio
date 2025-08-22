@@ -4,53 +4,52 @@ import { useEffect } from "react";
 import emailjs from "emailjs-com";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
+
 function Contact() { 
   useEffect(() => {
-      const cards = document.querySelectorAll(".card");
-      const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-              entry.target.classList.toggle("show", entry.isIntersecting);
-          })
-          }, 
-          {
-              threshold: 0.5,
-          }
-      )
-      const lastCardObserver = new IntersectionObserver(entries => {
-          const lastCard = entries[0];
-          if(!lastCard.isIntersecting) return
-          lastCardObserver.unobserve(lastCard.target)
-          lastCardObserver.observe(document.querySelector(".card:last-child"))
-      }, {})
-      lastCardObserver.observe(document.querySelector(".card:last-child"));
-      cards.forEach(card => {
-          observer.observe(card);
+    const cards = document.querySelectorAll(".card");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
       });
+    }, { threshold: 0.5 });
+
+    const lastCardObserver = new IntersectionObserver(entries => {
+      const lastCard = entries[0];
+      if (!lastCard.isIntersecting) return;
+      lastCardObserver.unobserve(lastCard.target);
+      lastCardObserver.observe(document.querySelector(".card:last-child"));
+    }, {});
+
+    lastCardObserver.observe(document.querySelector(".card:last-child"));
+    cards.forEach(card => {
+      observer.observe(card);
+    });
   }, []);
-  function addUrl(urlin){
-    let urlink = "";
-    urlink = urlin;
+
+  function addUrl(urlin) {
     const link = document.createElement("a");
-    link.href = urlink;
+    link.href = urlin;
     link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_wihdvep",      
-      "template_704dmhp",   
-      e.target,               
-      "TuWLoTBD5rPIKrcGa"
+      "service_mjig3uf",       // your EmailJS service ID service_mjig3uf
+      "template_704dmhp",      // your EmailJS template ID
+      e.target,                // form element
+      "TuWLoTBD5rPIKrcGa"      // your EmailJS public key
     )
     .then(() => {
       alert("Message Sent Successfully ✅");
-      e.target.reset(); // clear form after success
-    }, (error) => {
-      alert("ohhhh! please click on the email button");
+      e.target.reset();
+    }, () => {
+      alert("Ohhhh! Please click on the email button");
     });
   };
 
@@ -60,6 +59,7 @@ function Contact() {
         <div className="contact">
           <form onSubmit={handleSubmit} className="card">
             <h2>Contact Me</h2>
+
             <nav>
               <Stack>
                 <TextField 
@@ -109,36 +109,44 @@ function Contact() {
           </form>
         </div>
       </div>
+
       <footer id="contact">
         <section id="card" className="card">
-            <div>
-                <h2>ABDULMALIK</h2>
-            </div>
-            <div id="card" className="card">
-                <a href="#" class="a">HOME</a>
-                <a href="#about" class="a">ABOUT</a>
-                <a href="#about" class="a">SKILLS</a>
-                <a href="#projects" class="a">PROJECTS</a>
-                <a href="#contact" class="a">CONTACT</a>
-            </div>
-            <div id="card" className="card">
-                <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
-                <a href="#" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
-            </div>
-            <div id="card">
-                <button onClick={() => addUrl("mailto:abdrosheedabdmalikadgmail.com")}>
-                    <i class="fa-solid fa-envelope"></i>
-                    Email
-                </button>
-                <button onClick={() => addUrl("https://wa.me/9076956531")}>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Whatsapp
-                </button>
-            </div>
+          <div>
+            <h2>ABDULMALIK</h2>
+          </div>
+
+          <div id="card" className="card">
+            <a href="#home" className="a">HOME</a>
+            <a href="#about" className="a">ABOUT</a>
+            <a href="#about" className="a">SKILLS</a>
+            <a href="#projects" className="a">PROJECTS</a>
+            <a href="#contact" className="a">CONTACT</a>
+          </div>
+
+          <div id="card" className="card">
+            <a onClick={() => addUrl("https://www.facebook.com/base.man.304047")} className="a">
+              <img src={facebook} id="face" alt="Facebook"/>
+            </a>
+            <a onClick={() => addUrl("https://x.com/broskiprop94216")} className="a">
+              <img src={twitter} id="twi" alt="Twitter"/>
+            </a>
+          </div>
+
+          <div id="card">
+            <button onClick={() => addUrl("mailto:abdrosheedabdmalik@gmail.com")}>
+              <i className="fa-solid fa-envelope"></i>
+              Email
+            </button>
+            <button onClick={() => addUrl("https://wa.me/9076956531")}>
+              <i className="fa-brands fa-whatsapp"></i>
+              Whatsapp
+            </button>
+          </div>
         </section>
       </footer>
     </div>
-  )
+  );
 }
 
 export default Contact;
