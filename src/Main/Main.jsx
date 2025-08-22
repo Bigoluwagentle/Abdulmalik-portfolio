@@ -65,12 +65,12 @@ function Main(){
                 <div class="card" id="card">
                     <img src="img/icons8-popular-man-50.png" width="30px" alt="" id="experience"/>
                     <h4>Experience</h4>
-                    <p>5 Years</p>
+                    <p>3 Years +</p>
                 </div>
                 <div class="card" id="card">
                     <img src="img/icons8-check-mark.svg" width="30px" id="complete" alt=""/>
                     <h4>Completed Project</h4>
-                    <p>30+</p>
+                    <p>100+</p>
                 </div>
                 <div class="card" id="card">
                     <img src="img/icons8-support-50.png" width="30px" id="Support" alt=""/>

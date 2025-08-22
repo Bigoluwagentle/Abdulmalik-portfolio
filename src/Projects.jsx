@@ -42,6 +42,16 @@ function Project(){
         <div id="allProject">
             <h2>PROJECTS</h2>
             <article id="projects">
+                <div class="card" id="portfolio">
+                    <nav class="check">
+                        <h4>My Portfolio</h4>
+                        <p>Role: Frontend Developer</p>
+                        <p>Tech: REACT and JAVASCRIPT</p>
+                        <p>Challenge: Deliver real-time suggestions via API</p>
+                        <p>Result: Over 100 test users used it with positive results.</p>  
+                        <button onClick={() => addUrl("https://abdulmalik-portfolio-steel.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                    </nav>
+                </div>
                 <div class="card" id="ai">
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
@@ -125,16 +135,7 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="portfolio">
-                    <nav class="check">
-                        <h4>My Portfolio</h4>
-                        <p>Role: Frontend Developer</p>
-                        <p>Tech: REACT and JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://abdulmalik-portfolio-steel.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                    </nav>
-                </div>
+                
 
                 <div class="card" id="url">
                     <nav class="check">
@@ -147,9 +148,9 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="skin">
+                <div class="card" id="weather">
                     <nav class="check">
-                        <h4>Skin Care</h4>
+                        <h4>Weather App</h4>
                         <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
                         <p>Challenge: Deliver real-time suggestions via API</p>
@@ -158,25 +159,25 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="skin">
+                <div class="card" id="geegstack">
                     <nav class="check">
-                        <h4>Skin Care</h4>
+                        <h4>LMS Dashboard</h4>
                         <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
                         <p>Challenge: Deliver real-time suggestions via API</p>
                         <p>Result: Over 100 test users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <button onClick={() => addUrl("https://geegstack.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
 
-                <div class="card" id="skin">
+                <div class="card" id="blog">
                     <nav class="check">
-                        <h4>Skin Care</h4>
+                        <h4>My Blog</h4>
                         <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
                         <p>Challenge: Deliver real-time suggestions via API</p>
                         <p>Result: Over 100 test users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
 
