@@ -68,20 +68,30 @@ function Skill(){
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>TAILWIND CSS</h4>
-                        <div className="bar">
-                          <span data-percent="80">80%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-
-                    <nav id="card" className="card">
                         <h4>SASS</h4>
                         <div className="bar">
                           <span data-percent="98">98%</span>
                           <small>0%</small>
                         </div>
                     </nav>
+
+                    <nav id="card" className="card">
+                        <h4>BOOSTRAP</h4>
+                        <div className="bar">
+                          <span data-percent="75">75%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
+                        <h4>TAILWIND CSS</h4>
+                        <div className="bar">
+                          <span data-percent="70">70%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    
 
                     <nav id="card" className="card">
                         <h4>JAVASCRIPT</h4>
@@ -110,7 +120,7 @@ function Skill(){
                     <nav id="card" className="card">
                         <h4>GIT</h4>
                         <div className="bar">
-                          <span data-percent="95">95%</span>
+                          <span data-percent="90">90%</span>
                           <small>0%</small>
                         </div>
                     </nav>

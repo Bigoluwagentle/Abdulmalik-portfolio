@@ -63,17 +63,17 @@ function Main(){
 
             <figure id="card">
                 <div class="card" id="card">
-                    <img src="img/icons8-popular-man-50.png" width="30px" alt="" id="experience"/>
+                    <i class="fa-solid fa-user"></i>
                     <h4>Experience</h4>
                     <p>3 Years +</p>
                 </div>
                 <div class="card" id="card">
-                    <img src="img/icons8-check-mark.svg" width="30px" id="complete" alt=""/>
+                    <i class="fa-solid fa-diagram-project"></i>
                     <h4>Completed Project</h4>
                     <p>100+</p>
                 </div>
                 <div class="card" id="card">
-                    <img src="img/icons8-support-50.png" width="30px" id="Support" alt=""/>
+                    <i class="fa-solid fa-square-envelope"></i>
                     <h4>Support</h4>
                     <p>Geegstack Academy</p>
                 </div>

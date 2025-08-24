@@ -2,8 +2,7 @@ import "./Contact.css";
 import { Stack, TextField, Button } from "@mui/material";
 import { useEffect } from "react";
 import emailjs from "emailjs-com";
-import facebook from "../img/icon-facebook.svg";
-import twitter from "../img/icon-twitter.svg";
+import Footer from "../Footer/Footer";
 
 function Contact() { 
   useEffect(() => {
@@ -57,10 +56,10 @@ function Contact() {
     <div id="contact5">
       <div id="contact2">
         <div className="contact">
-          <form onSubmit={handleSubmit} className="card">
+          <form onSubmit={handleSubmit}>
             <h2>Contact Me</h2>
 
-            <nav>
+            <nav className="card">
               <Stack>
                 <TextField 
                   name="name"
@@ -73,7 +72,7 @@ function Contact() {
               </Stack>
             </nav>
 
-            <nav>
+            <nav className="card">
               <Stack>
                 <TextField 
                   name="email" 
@@ -86,7 +85,7 @@ function Contact() {
               </Stack>
             </nav>
 
-            <nav>
+            <nav className="card">
               <Stack>
                 <TextField 
                   name="project"          
@@ -99,7 +98,7 @@ function Contact() {
               </Stack>
             </nav>
 
-            <nav>
+            <nav className="card">
               <Stack>
                 <Button type="submit" variant="contained" color="info">
                   Send
@@ -109,42 +108,7 @@ function Contact() {
           </form>
         </div>
       </div>
-
-      <footer id="contact">
-        <section id="card" className="card">
-          <div>
-            <h2>ABDULMALIK</h2>
-          </div>
-
-          <div id="card" className="card">
-            <a href="#home" className="a">HOME</a>
-            <a href="#about" className="a">ABOUT</a>
-            <a href="#about" className="a">SKILLS</a>
-            <a href="#projects" className="a">PROJECTS</a>
-            <a href="#contact" className="a">CONTACT</a>
-          </div>
-
-          <div id="card" className="card">
-            <a onClick={() => addUrl("https://www.facebook.com/base.man.304047")} className="a">
-              <img src={facebook} id="face" alt="Facebook"/>
-            </a>
-            <a onClick={() => addUrl("https://x.com/broskiprop94216")} className="a">
-              <img src={twitter} id="twi" alt="Twitter"/>
-            </a>
-          </div>
-
-          <div id="card">
-            <button onClick={() => addUrl("mailto:abdrosheedabdmalik@gmail.com")}>
-              <i className="fa-solid fa-envelope"></i>
-              Email
-            </button>
-            <button onClick={() => addUrl("https://wa.me/9076956531")}>
-              <i className="fa-brands fa-whatsapp"></i>
-              Whatsapp
-            </button>
-          </div>
-        </section>
-      </footer>
+      <Footer/>
     </div>
   );
 }

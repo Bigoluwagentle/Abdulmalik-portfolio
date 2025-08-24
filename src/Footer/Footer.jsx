@@ -1,6 +1,7 @@
 import "./Footer.css";
 import facebook from "../img/icon-facebook.svg";
 import twitter from "../img/icon-twitter.svg";
+import { Link } from "react-router-dom";
 function Footer(){
     function addUrl(urlin){
         let urlink = "";
@@ -20,11 +21,18 @@ function Footer(){
                         <h2>ABDULMALIK</h2>
                     </div>
                     <div id="card" className="card">
-                        <a href="#" class="a">HOME</a>
-                        <a href="#about" class="a">ABOUT</a>
-                        <a href="#about" class="a">SKILLS</a>
-                        <a href="#projects" class="a">PROJECTS</a>
-                        <a href="#contact" class="a">CONTACT</a>
+                        <a href="#" class="a" onClick={() => {
+                            document.querySelector("#about").click();
+                        }}>ABOUT</a>
+                        <a href="#" class="a" onClick={() => {
+                            document.querySelector("#skill").click();
+                        }}>SKILLS</a>
+                        <a href="#" class="a" onClick={() => {
+                            document.querySelector("#project").click();
+                        }}>PROJECTS</a>
+                        <a href="#" class="a" onClick={() => {
+                            document.querySelector("#contact").click();
+                        }}>CONTACT</a>
                     </div>
                     <div id="card" className="card">
                         <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
@@ -41,6 +49,10 @@ function Footer(){
                         </button>
                     </div>
                 </section>
+                <Link id="about" to="/"/>
+                <Link id="skill" to="/Skills"/>
+                <Link id="project" to="/Projects"/>
+                <Link id="contact" to="/Contact"/>
             </footer>
         </div>
     )
