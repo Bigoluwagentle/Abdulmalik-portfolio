@@ -37,6 +37,9 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+            > img{
+                width: 400px;
+            }
             > nav{
                 display: flex;
                 flex-direction: column;
@@ -80,6 +83,7 @@
                 }
             }
         }
+
         .eccomerce{
             background-image: url("/public/desktop-design.jpg");
         }
@@ -117,50 +121,14 @@
         }
     }
 }
-article #land{
-    background-image: url(/public/job.jpeg);
-}
-article #product{
-    background-image: url(/public/movie.jpeg);
-}
-article #ai{
-    background-image: url(/public/hi.webp);
-}
 article #web3{
     background-image: url(/public/download.webp);
-}
-article #web{
-    background-image: url(/public/soft.jpeg);
-}
-article #bag{
-    background-image: url(/public/Screenshot_18-8-2025_1507_localhost.jpeg);
-}
-#recipe{
-    background-image: url(/public/Screenshot_18-8-2025_102523_localhost.jpeg);
-}
-#alquran{
-    background-image: url(/public/Screenshot_18-8-2025_104114_abdulmalik-phi.vercel.app.jpeg);
 }
 #bottom-bar{
     display: none;
 }
-#skin{
-    background-image: url(/public/Screenshot_18-8-2025_105440_skin-care-opal.vercel.app.jpeg);
-}
-#portfolio{
-    background-image: url(/public/Screenshot_19-8-2025_63754_localhost.jpeg);
-}
-#url{
-    background-image: url(/public/Screenshot_19-8-2025_134029_localhost.jpeg);
-}
-#weather{
-    background-image: url(/public/Screenshot_20-8-2025_6659_localhost.jpeg);
-}
 #geegstack{
     background-image: url(/public/Screenshot_20-8-2025_63025_localhost.jpeg);
-}
-#blog{
-     background-image: url(/public/Screenshot_21-8-2025_144514_abdulmalik-blog.vercel.app.jpeg);
 }
 #hamburger{
     display: none;

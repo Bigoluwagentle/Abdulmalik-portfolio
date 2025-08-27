@@ -1,9 +1,21 @@
 import "./Products.css";
 import { useEffect } from "react";
-
+import Portfolio from "./img/Macbook-Air-localhost.png";
 import jennie from "./img/image-thomas.jpg";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/IMG-20250710-WA0058.jpg";
+import Nutrition from "./img/Screenshot 2025-08-26 135356.png";
+import Movie from "./img/Screenshot 2025-08-26 135936.png";
+import Eccomerce from "./img/Screenshot 2025-08-26 140836.png";
+import Car from "./img/Screenshot 2025-08-26 141251.png";
+import Recipe from "./img/Screenshot 2025-08-26 141603.png";
+import Alquran from "./img/Screenshot 2025-08-26 141924.png";
+import Skin from "./img/Screenshot 2025-08-26 142246.png";
+import Url from "./img/Screenshot 2025-08-26 142503.png";
+import Weather from "./img/Screenshot 2025-08-27 023114.png";
+import Lms from "./img/Screenshot 2025-08-27 024007.png";
+import Blog from "./img/Screenshot 2025-08-27 024215.png";
+import Job from "./img/Screenshot 2025-08-27 061615.png";
 function Project(){
     useEffect(() => {
         const cards = document.querySelectorAll(".card");
@@ -43,6 +55,7 @@ function Project(){
             <h2>PROJECTS</h2>
             <article id="projects">
                 <div class="card" id="portfolio">
+                    <img src={Portfolio} alt="" />
                     <nav class="check">
                         <h4>My Portfolio</h4>
                         <p>Role: Frontend Developer</p>
@@ -53,6 +66,7 @@ function Project(){
                     </nav>
                 </div>
                 <div class="card" id="ai">
+                    <img src={Nutrition} alt="" />
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
                         <p>Role: Frontend Developer</p>
@@ -64,6 +78,7 @@ function Project(){
                 </div>
             
                 <div class="card" id="product">
+                    <img src={Movie} alt="" />
                     <nav class="check">
                         <h4>Movie Website</h4>
                         <p>Role: Frontend Developer</p>
@@ -73,7 +88,8 @@ function Project(){
                         <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="card" id="land">
+                <div class="card">
+                    <img src={Job} alt="" />
                     <nav class="check">
                         <h4>Job-Board</h4>
                         <p>Role: Frontend Developer</p>
@@ -83,7 +99,8 @@ function Project(){
                         <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="card" id="web">
+                <div class="card">
+                    <img src={Eccomerce} alt="" />
                     <nav class="check">
                         <h4>E-CCOMERCE</h4>
                         <p>Role: Frontend Developer</p>
@@ -93,7 +110,8 @@ function Project(){
                         <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="card" id="bag">
+                <div class="card">
+                    <img src={Car} alt="" />
                     <nav class="check">
                         <h4>Car Dealer</h4>
                         <p>Role: Frontend Developer</p>
@@ -103,7 +121,8 @@ function Project(){
                         <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="card" id="recipe">
+                <div class="card">
+                    <img src={Recipe} alt="" />
                     <nav class="check">
                         <h4>Recipe</h4>
                         <p>Role: Frontend Developer</p>
@@ -113,7 +132,8 @@ function Project(){
                         <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-                <div class="card" id="alquran">
+                <div class="card">
+                    <img src={Alquran} alt="" />
                     <nav class="check">
                         <h4>Al-Quran Audio</h4>
                         <p>Role: Frontend Developer</p>
@@ -124,7 +144,8 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="skin">
+                <div class="card">
+                    <img src={Skin} alt="" />
                     <nav class="check">
                         <h4>Skin Care</h4>
                         <p>Role: Frontend Developer</p>
@@ -135,9 +156,8 @@ function Project(){
                     </nav>
                 </div>
 
-                
-
-                <div class="card" id="url">
+                <div class="card">
+                    <img src={Url} alt="" />
                     <nav class="check">
                         <h4>URL Shorten</h4>
                         <p>Role: Frontend Developer</p>
@@ -148,18 +168,20 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="weather">
+                <div class="card">
+                    <img src={Weather} alt="" />
                     <nav class="check">
                         <h4>Weather App</h4>
                         <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
                         <p>Challenge: Deliver real-time suggestions via API</p>
                         <p>Result: Over 100 test users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
 
-                <div class="card" id="geegstack">
+                <div class="card">
+                    <img src={Lms} alt="" />
                     <nav class="check">
                         <h4>LMS Dashboard</h4>
                         <p>Role: Frontend Developer</p>
@@ -170,7 +192,8 @@ function Project(){
                     </nav>
                 </div>
 
-                <div class="card" id="blog">
+                <div class="card">
+                <img src={Blog} alt="" />
                     <nav class="check">
                         <h4>My Blog</h4>
                         <p>Role: Frontend Developer</p>
