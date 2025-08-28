@@ -247,7 +247,6 @@ function Project(){
                     <p style={{fontSize: "12px"}} class="text">Marketing Director</p>
                 </nav>
             </summary>
-            
         </div>
     )
 }

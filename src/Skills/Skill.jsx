@@ -91,8 +91,6 @@ function Skill(){
                         </div>
                     </nav>
 
-                    
-
                     <nav id="card" className="card">
                         <h4>JAVASCRIPT</h4>
                         <div className="bar">
@@ -128,7 +126,7 @@ function Skill(){
                     <nav id="card" className="card">
                         <h4>Framer Motion</h4>
                         <div className="bar">
-                          <span data-percent="45">45%</span>
+                          <span data-percent="80">80%</span>
                           <small>0%</small>
                         </div>
                     </nav>
