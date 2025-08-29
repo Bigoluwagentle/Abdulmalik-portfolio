@@ -133,16 +133,7 @@ article #web3{
 #hamburger{
     display: none;
 }
-.card{
-    transform: scale(0.1);
-    transition: 850ms;
-    color: white;
-}
-.card.show{
-    transform: scale(0.9);
-    transform: scale(1);
-    opacity: 1;
-}
+
 @media screen and (max-width: 909px){
     #allProject{
         #hamburger{
@@ -163,6 +154,7 @@ article #web3{
                 background-position: center;
                 background-size: 100%;
                 background-repeat: no-repeat;
+                margin-bottom: 0px;
             }
         }
         summary{

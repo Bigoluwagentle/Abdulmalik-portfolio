@@ -45,10 +45,10 @@ function Contact() {
       "TuWLoTBD5rPIKrcGa"      // your EmailJS public key
     )
     .then(() => {
-      alert("Message Sent Successfully ✅");
+      alert("Message Sent Successfully ✅. We will get back to you very soon");
       e.target.reset();
     }, () => {
-      alert("Ohhhh! Please click on the email button");
+      alert("Ohhhh! Please connect to internet");
     });
   };
 
