@@ -180,7 +180,7 @@ function Project(){
                     </nav>
                 </div>
 
-                <div>
+                {/* <div>
                     <nav class="check">
                         <h4>Skin Care</h4>
                         <p>Role: Frontend Developer</p>
@@ -189,7 +189,7 @@ function Project(){
                         <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
-                </div>
+                </div> */}
                 
                 <div id="web3">
                     <nav class="check">
