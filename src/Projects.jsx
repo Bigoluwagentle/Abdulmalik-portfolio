@@ -17,7 +17,7 @@ import Weather from "./img/Screenshot 2025-08-27 023114.png";
 import Lms from "./img/Screenshot 2025-08-27 024007.png";
 import Blog from "./img/Screenshot 2025-08-27 024215.png";
 import Job from "./img/Screenshot 2025-08-27 061615.png";
-import Burger from "./img/Screenshot 2025-08-30 073238.png";
+import Burger from "./img/Screenshot 2025-08-30 073238.png";;
 function Project(){
     function addUrl(urlin){
         let urlink = "";
