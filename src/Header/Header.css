@@ -48,7 +48,7 @@ nav.check{
 }
 .card{
     transform: scale(0.1);
-    transition: 850ms;
+    transition: 550ms;
     color: white;
 }
 .card.show{
