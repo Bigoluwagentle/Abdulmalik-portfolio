@@ -51,7 +51,7 @@
             }
             > p{
                 line-height: 30px;
-                word-spacing: 2px;
+                color: red;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             > div{
