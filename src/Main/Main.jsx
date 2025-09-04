@@ -42,7 +42,7 @@ function Main(){
                     <h2 class="you">Hello, I'm</h2>
                     <h1 class="you">Abdulmalik</h1>
                     <h2 class="you">Frontend Developer</h2>
-                    <p>i builds modern, responsive websites and interfaces using React, Vue, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</p>
+                    <p>i builds modern, responsive websites and interfaces using Next.js, React.js, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</p>
                     <button onClick={downloadPDF}>
                         <i class="fa-solid fa-download"></i>
                         Download CV
