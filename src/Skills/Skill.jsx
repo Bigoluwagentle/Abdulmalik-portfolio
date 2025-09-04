@@ -98,6 +98,13 @@ function Skill(){
                           <small>0%</small>
                         </div>
                     </nav>
+                    <nav id="card" className="card">
+                        <h4>Next.js</h4>
+                        <div className="bar">
+                          <span data-percent="50">50%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
 
                     <nav id="card" className="card">
                         <h4>REACT.js</h4>
