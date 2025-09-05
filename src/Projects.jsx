@@ -157,7 +157,7 @@ function Project(){
                         <p>Role: Frontend Developer</p>
                         <p>Tech:REACT AND JAVASCRIPT</p>
                         <p>Still In Progess</p>
-                        <button onClick={() => addUrl("https://xend-finance-seven.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
                 <motion.div 
@@ -281,13 +281,9 @@ function Project(){
                         <p>Tech: REACT AND API</p>
                         <p>Challenge: Deliver real-time suggestions via API</p>
                         <p>Result: Over 100 test users used it with positive results.</p>  
-                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-
-                
-                
-                
             </motion.article>
 
             <summary>
