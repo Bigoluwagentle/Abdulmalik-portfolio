@@ -1,6 +1,7 @@
 import React from "react";
 import "./Products.css";
 import { motion } from "framer-motion";
+import Footer from "./Footer/Footer";
 import Portfolio from "./img/Macbook-Air-localhost.png";
 import jennie from "./img/image-thomas.jpg";
 import emily from "./img/image-emily.jpg";
@@ -39,7 +40,7 @@ function Project(){
         visible: {
             opacity: 1, y: 0,
             transition: {
-                duration: 2, type: "spring", stiffness: 300
+                duration: 1, type: "spring", stiffness: 300
             }
         }
         
@@ -57,10 +58,7 @@ function Project(){
                     <img src={Portfolio} alt="" />
                     <nav class="check">
                         <h4>My Portfolio</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT and JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-portfolio-steel.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -72,10 +70,7 @@ function Project(){
                     <img src={Nutrition} alt="" />
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results. </p>
                         <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -88,10 +83,7 @@ function Project(){
                     <img src={Burger} alt="" />
                     <nav class="check">
                         <h4>Burger Store</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://code-with-faith-burger-home.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -105,10 +97,7 @@ function Project(){
                     <img src={Eccomerce} alt="" />
                     <nav class="check">
                         <h4>E-CCOMERCE</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT, JSON AND JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -122,11 +111,22 @@ function Project(){
                     <img src={Car} alt="" />
                     <nav class="check">
                         <h4>Car Dealer</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                    </nav>
+                </motion.div>
+
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <img src={Creative} alt="" />
+                    <nav className="check">
+                        <h4>Creative Jobboard</h4>
+                        <p>Tech:REACT AND JAVASCRIPT</p>
+                        <p>Still In Progess</p>
+                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
             
@@ -139,27 +139,11 @@ function Project(){
                     <img src={Recipe} alt="" />
                     <nav class="check">
                         <h4>Recipe</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Creative} alt="" />
-                    <nav className="check">
-                        <h4>Creative Jobboard</h4>
-                        <p>Role: Frontend Developer</p>
-                        <p>Tech:REACT AND JAVASCRIPT</p>
-                        <p>Still In Progess</p>
-                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                    </nav>
-                </motion.div>
+                
                 <motion.div 
                     variants={containerVariants}
                     initial="hidden"
@@ -168,10 +152,7 @@ function Project(){
                     <img src={Movie} alt="" />
                     <nav class="check">
                         <h4>Movie Website</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: HTML, API AND JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100+ users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -184,10 +165,7 @@ function Project(){
                     <img src={Job} alt="" />
                     <nav class="check">
                         <h4>Job-Board</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT, API AND JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -201,10 +179,7 @@ function Project(){
                     <img src={Alquran} alt="" />
                     <nav class="check">
                         <h4>Al-Quran Audio</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-phi.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -217,10 +192,7 @@ function Project(){
                     <img src={Skin} alt="" />
                     <nav class="check">
                         <h4>Skin Care</h4>
-                        <p>Role: Frontend Developer</p>
-                        <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
+                        <p>Tech: REACT</p>
                         <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -233,10 +205,7 @@ function Project(){
                     <img src={Url} alt="" />
                     <nav class="check">
                         <h4>URL Shorten</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND JAVASCRIPT</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://abdulmalik-url-shorten.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -249,10 +218,7 @@ function Project(){
                     <img src={Weather} alt="" />
                     <nav class="check">
                         <h4>Weather App</h4>
-                        <p>Role: Frontend Developer</p>
                         <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
                         <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -265,10 +231,7 @@ function Project(){
                     <img src={Lms} alt="" />
                     <nav class="check">
                         <h4>LMS Dashboard</h4>
-                        <p>Role: Frontend Developer</p>
-                        <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
+                        <p>Tech: REACT AND JAVASCRIPT</p>
                         <button onClick={() => addUrl("https://geegstack.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
@@ -277,10 +240,7 @@ function Project(){
                 <img src={Blog} alt="" />
                     <nav className="check">
                         <h4>My Blog</h4>
-                        <p>Role: Frontend Developer</p>
-                        <p>Tech: REACT AND API</p>
-                        <p>Challenge: Deliver real-time suggestions via API</p>
-                        <p>Result: Over 100 test users used it with positive results.</p>  
+                        <p>Tech: REACT</p>
                         <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
@@ -306,6 +266,7 @@ function Project(){
                     <p style={{fontSize: "12px"}} class="text">Marketing Director</p>
                 </nav>
             </summary>
+            <Footer/>
         </div>
     )
 }

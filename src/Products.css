@@ -12,10 +12,7 @@
         justify-content: space-between;
         transition: transform 0.6s;
         > div{
-            position: absolute;
-            backface-visibility: hidden;
             width: 30%;
-            min-height: 45vh;
             margin-left: 10px;
             margin-bottom: 70px;
             margin-right: 10px;
@@ -23,44 +20,31 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
             border-radius: 10px;
-            transition: transform 1s;
-            &:hover{
-                transform: translateY(-20px);
-            }
-            &:hover > nav.check{
-                opacity: 1;
-                transform: translateY(0);
-            }
+            position: sticky;
+            top: 100px;
             > img{
                 width: 400px;
+               
             }
             > nav{
                 display: flex;
                 flex-direction: column;
-                position: absolute;
-                bottom: 0;
-                color: white;
+                align-items: start;
                 width: 100%;
-                min-height: 45vh;
-                background-color: white;
-                opacity: 0;
-                transform: translateY(20px);
-                transition: opacity 0.4s ease, transform 0.9s ease;
                 > h4{
-                    color: black;
+                    color: #135455;
                     margin-bottom: 10px;
                     text-transform: uppercase;
+                }
+                > p{
+                    letter-spacing: 1px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
                 > button{
                     background-color:#135455;
                     color: #ffffff;
-                    padding: 0.5rem 1.2rem;
+                    padding: 0.7rem 1.2rem;
                     border: none;
                     border-radius: 6px;
                     font-weight: 600;
@@ -72,20 +56,6 @@
                     }
                 }
             }
-            > .check{
-                position: absolute;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
-                > p{
-                    line-height: 23px;
-                    font-weight: bold;
-                    color: #135455;
-                }
-            }
-        }
-
-        .eccomerce{
-            background-image: url("/public/desktop-design.jpg");
         }
     }
 
@@ -146,10 +116,7 @@
             > div{
                 width: 90%;
                 min-height: 50vh;
-                background-position: center;
-                background-size: 100%;
-                background-repeat: no-repeat;
-                margin-bottom: 0px;
+                margin-bottom: 60px;
             }
         }
         summary{
