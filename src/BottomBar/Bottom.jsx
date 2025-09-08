@@ -30,13 +30,14 @@ function Bottom() {
       <div id="bottom-bar" style={{ backgroundColor: "black" }} className="card">
         <nav>
           <NavLink to="/" className="nav-link">
-            <i className="fa-solid fa-address-card"></i>
+            
+            <i className="fa-solid fa-house"></i>
             <span>ABOUT</span>
           </NavLink>
         </nav>
         <nav>
           <NavLink to="/Skills" className="nav-link">
-            <i className="fa-solid fa-house"></i>
+            <i className="fa-solid fa-address-card"></i>
             <span>SKILLS</span>
           </NavLink>
         </nav>

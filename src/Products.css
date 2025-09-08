@@ -24,14 +24,16 @@
             position: sticky;
             top: 100px;
             > img{
-                width: 400px;
-               
+                width: 100%;
             }
             > nav{
                 display: flex;
                 flex-direction: column;
                 align-items: start;
                 width: 100%;
+                position: sticky;
+                top: 0;
+                background-color: rgb(38, 35, 35);
                 > h4{
                     color: #135455;
                     margin-bottom: 10px;
@@ -51,6 +53,7 @@
                     cursor: pointer;
                     transition:  background-color 0.2s ease;
                     margin-top: 20px;
+                    margin-bottom: 20px;
                     &:hover{
                         background-color: #355555;
                     }

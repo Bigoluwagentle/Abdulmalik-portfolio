@@ -48,7 +48,7 @@ function Project(){
     return(
         <div id="allProject">
             <h2>PROJECTS</h2>
-            <motion.article id="projects" >
+            <article id="projects" >
                 <motion.div id="portfolio"
                     variants={containerVariants}
                     initial="hidden"
@@ -244,7 +244,7 @@ function Project(){
                         <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </div>
-            </motion.article>
+            </article>
 
             <summary>
                 <nav id="card">
