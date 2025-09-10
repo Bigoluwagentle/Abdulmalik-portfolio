@@ -16,11 +16,11 @@ function Footer(){
     return(
         <div id="footer10">
             <footer id="contact">
-                <section id="card" className="card">
+                <section id="card">
                     <div>
                         <h2>ABDULMALIK</h2>
                     </div>
-                    <div id="card" className="card">
+                    <div id="card">
                         <a href="#" class="a" onClick={() => {
                             document.querySelector("#about").click();
                         }}>ABOUT</a>
@@ -34,7 +34,7 @@ function Footer(){
                             document.querySelector("#contact").click();
                         }}>CONTACT</a>
                     </div>
-                    <div id="card" className="card">
+                    <div id="card">
                         <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
                         <a href="#" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
                     </div>

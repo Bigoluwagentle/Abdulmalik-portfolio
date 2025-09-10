@@ -1,29 +1,10 @@
 import "./Header.css";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import {motion} from "framer-motion";
 
 function Header() {
   useEffect(() => {
-    const cards = document.querySelectorAll(".card");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          entry.target.classList.toggle("show", entry.isIntersecting);
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    const lastCardObserver = new IntersectionObserver((entries) => {
-      const lastCard = entries[0];
-      if (!lastCard.isIntersecting) return;
-      lastCardObserver.unobserve(lastCard.target);
-      lastCardObserver.observe(document.querySelector(".card:last-child"));
-    });
-
-    lastCardObserver.observe(document.querySelector(".card:last-child"));
-    cards.forEach((card) => observer.observe(card));
-
     const bars = document.querySelectorAll(".bar span");
     const observers = new IntersectionObserver(
       (entries) => {
@@ -53,12 +34,20 @@ function Header() {
 
   return (
     <div id="header">
-      <header id="card" className="card">
+      <header id="card">
         <div className="head" id="card">
-          <h2>ABDULMALIK</h2>
+          <motion.h2
+            initial = {{opacity:0, y: 100}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 1}}
+          >ABDULMALIK</motion.h2>
         </div>
 
-        <div className="links" id="card">
+        <motion.div className="links" id="card"
+          initial = {{opacity: 0, x: 100}}
+          whileInView={{opacity:1, x:0}}
+          transition={{duration: 1.5, delay: 0.5}}
+        >
           <NavLink to="/" className="a">
             ABOUT
           </NavLink>
@@ -71,7 +60,7 @@ function Header() {
           <NavLink to="/Contact" className="a">
             CONTACT
           </NavLink>
-        </div>
+        </motion.div>
         <h2 id="port">PORTFOLIO</h2>
       </header>
     </div>

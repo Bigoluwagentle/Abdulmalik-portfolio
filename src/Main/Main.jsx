@@ -1,31 +1,10 @@
 import "./Main.css";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 import ji from "../img/ji.jpg";
 import light from "../img/light.jpg";
 import Footer from "../Footer/Footer";
 function Main(){
-    useEffect(() => {
-        const cards = document.querySelectorAll(".card");
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("show", entry.isIntersecting);
-            })
-            }, 
-            {
-                threshold: 0.5,
-            }
-        )
-        const lastCardObserver = new IntersectionObserver(entries => {
-            const lastCard = entries[0];
-            if(!lastCard.isIntersecting) return
-            lastCardObserver.unobserve(lastCard.target)
-            lastCardObserver.observe(document.querySelector(".card:last-child"))
-        }, {})
-        lastCardObserver.observe(document.querySelector(".card:last-child"));
-        cards.forEach(card => {
-            observer.observe(card);
-        });
-    }, []);
+    
     function downloadPDF() {
         const pdfUrl = 'Abdulmalik_CV.docx';
         const link = document.createElement('a');
@@ -38,15 +17,30 @@ function Main(){
     return(
         <div id="main">
             <main>
-                <section className="card">
+                <section>
                     <h2 class="you">Hello, I'm</h2>
                     <h1 class="you">Abdulmalik</h1>
-                    <h2 class="you">Frontend Developer</h2>
-                    <p>i builds modern, responsive websites and interfaces using Next.js, React.js, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</p>
-                    <button onClick={downloadPDF}>
+                    <motion.h2 class="you"
+                        initial = {{opacity: 0, x: 100}}
+                        whileInView = {{opacity:1, x:0,}}
+                        transition = {{duration:1.5, delay: 0.5}}
+                        
+                    >Frontend Engineer</motion.h2>
+                    <motion.p
+                        initial = {{opacity:0, y: 100}}
+                        whileInView = {{opacity:1, y:0}}
+                        transition={{duration: 1, delay:1.5, type: "spring", stiffness: 120}}
+                    >i builds modern, responsive websites and interfaces using Next.js, React.js, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
+                    <motion.button onClick={downloadPDF} 
+                        initial ={{x: 100, opacity:0}}
+                        whileInView={{x:0, opacity:1, scale:1}}
+                        transition={{duration:2, delay: 2, type: "spring", stiffness: 200}}
+                        whileHover = {{scale:1.1}}
+                    >
                         <i class="fa-solid fa-download"></i>
                         Download CV
-                    </button>
+                        
+                    </motion.button>
                 </section>
                 <img src={ji} id="card" class="change" width="400px" alt=""/>
             </main>
@@ -62,21 +56,33 @@ function Main(){
             </nav>
 
             <figure id="card">
-                <div class="card" id="card">
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
                     <i class="fa-solid fa-user"></i>
                     <h4>Experience</h4>
                     <p>3 Years +</p>
-                </div>
-                <div class="card" id="card">
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
                     <i class="fa-solid fa-diagram-project"></i>
                     <h4>Completed Project</h4>
                     <p>100+</p>
-                </div>
-                <div class="card" id="card">
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
                     <i class="fa-solid fa-square-envelope"></i>
                     <h4>Support</h4>
                     <p>Geegstack Academy</p>
-                </div>
+                </motion.div>
             </figure>
             <Footer/>
         </div>
