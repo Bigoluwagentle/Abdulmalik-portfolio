@@ -2,7 +2,7 @@ import React from "react";
 import "./Products.css";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
-import Portfolio from "./img/Macbook-Air-localhost.png";
+import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
 import jennie from "./img/image-thomas.jpg";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/IMG-20250710-WA0058.jpg";
@@ -57,9 +57,9 @@ function Project(){
                 >
                     <img src={Portfolio} alt="" />
                     <nav class="check">
-                        <h4>My Portfolio</h4>
-                        <p>Tech: REACT and JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://abdulmalik-portfolio-steel.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <h4>Car Repair</h4>
+                        <p>Tech: REACT, Javascript and API</p>
+                        <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
                 <motion.div id="ai" 
