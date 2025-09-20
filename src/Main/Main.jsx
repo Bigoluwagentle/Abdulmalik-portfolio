@@ -48,7 +48,7 @@ function Main(){
             <nav class="ok" id="card">
                 <aside class="about" id="about">
                     <h2 class="p">ABOUT ME</h2>
-                    <p>I'm a front-end developer with a passion for crafting engaging, user-friendly digital experiences. I specialize in building modern UI/UX-focused interfaces that are not only visually appealing but also highly functional. With a strong design sense and coding skills to match, I thrive on transforming complex ideas into elegant, interactive web solutions. I'm also exploring the future of the web through Web3 technologies, creating decentralized applications that put users first. From sleek landing pages to dynamic dApps, I’m driven by a commitment to clean code, seamless design, and next-gen user experiences.</p>
+                    <p>I’m a Frontend Engineer & Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development—breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same: to create meaningful digital experiences while empowering others to do the same.</p>
                 </aside>
                 <aside id="card">
                     <img class="mypic" src={light} alt=""/>
