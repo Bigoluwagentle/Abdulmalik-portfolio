@@ -3,6 +3,7 @@ import "./Products.css";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
 import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
+import Buycex from "./img/Screenshot 2025-09-21 093257.png";
 import jennie from "./img/image-thomas.jpg";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/IMG-20250710-WA0058.jpg";
@@ -15,7 +16,6 @@ import Alquran from "./img/Screenshot 2025-08-26 141924.png";
 import Skin from "./img/Screenshot 2025-08-26 142246.png";
 import Url from "./img/Screenshot 2025-08-26 142503.png";
 import Weather from "./img/Screenshot 2025-08-27 023114.png";
-import Lms from "./img/Screenshot 2025-08-27 024007.png";
 import Blog from "./img/Screenshot 2025-08-27 024215.png";
 import Job from "./img/Screenshot 2025-08-27 061615.png";
 import Burger from "./img/Screenshot 2025-08-30 073238.png";
@@ -55,6 +55,20 @@ function Project(){
                     whileInView="visible"
                     exit="exit"
                 >
+                    <img src={Buycex} alt="" />
+                    <nav class="check">
+                        <h4>Buycex Exchange</h4>
+                        <p>Tech: NEXTJS, Javascript and Sass</p>
+                        <p>Still ongoing</p>
+                        <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                    </nav>
+                </motion.div>
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
                     <img src={Portfolio} alt="" />
                     <nav class="check">
                         <h4>Car Repair</h4>
@@ -72,6 +86,19 @@ function Project(){
                         <h4>AI NUTRITIONIST</h4>
                         <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
                         <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                    </nav>
+                </motion.div>
+
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <img src={Creative} alt="" />
+                    <nav className="check">
+                        <h4>Creative Jobboard</h4>
+                        <p>Tech:REACT AND JAVASCRIPT</p>
+                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
 
@@ -116,19 +143,6 @@ function Project(){
                     </nav>
                 </motion.div>
 
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Creative} alt="" />
-                    <nav className="check">
-                        <h4>Creative Jobboard</h4>
-                        <p>Tech:REACT AND JAVASCRIPT</p>
-                        <p>Still In Progess</p>
-                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                    </nav>
-                </motion.div>
             
                 <motion.div 
                     variants={containerVariants}
@@ -220,19 +234,6 @@ function Project(){
                         <h4>Weather App</h4>
                         <p>Tech: REACT AND API</p>
                         <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                    </nav>
-                </motion.div>
-
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Lms} alt="" />
-                    <nav class="check">
-                        <h4>LMS Dashboard</h4>
-                        <p>Tech: REACT AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://geegstack.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
                 </motion.div>
 
