@@ -101,7 +101,7 @@ function Skill(){
                     <nav id="card" className="card">
                         <h4>Next.js</h4>
                         <div className="bar">
-                          <span data-percent="50">50%</span>
+                          <span data-percent="65">65%</span>
                           <small>0%</small>
                         </div>
                     </nav>
