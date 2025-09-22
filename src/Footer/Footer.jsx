@@ -35,6 +35,7 @@ function Footer(){
                         }}>CONTACT</a>
                     </div>
                     <div id="card">
+                        <a href="#" onClick={() => addUrl("https://github.com/Bigoluwagentle")} class="a"><i class="fa-brands fa-github"></i></a>
                         <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
                         <a href="#" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
                     </div>
@@ -43,8 +44,11 @@ function Footer(){
                             <i class="fa-solid fa-envelope"></i>
                             Email
                         </button>
+                        <button onClick={() => addUrl("https://github.com/Bigoluwagentle")}>
+                            <i class="fa-brands fa-github"></i>
+                            Github
+                        </button>
                         <button onClick={() => addUrl("https://wa.me/9076956531")}>
-                            <i class="fa-brands fa-whatsapp"></i>
                             Whatsapp
                         </button>
                     </div>

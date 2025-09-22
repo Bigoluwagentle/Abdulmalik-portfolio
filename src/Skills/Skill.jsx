@@ -53,6 +53,46 @@ function Skill(){
                 <h2>Skills</h2>
                 <section>
                     <nav id="card" className="card">
+                        <h4>Next.js</h4>
+                        <div className="bar">
+                          <span data-percent="65">65%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
+                        <h4>REACT.js</h4>
+                        <div className="bar">
+                          <span data-percent="85">85%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
+                        <h4>VUE.js</h4>
+                        <div className="bar">
+                          <span data-percent="60">60%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
+                        <h4>TAILWIND CSS</h4>
+                        <div className="bar">
+                          <span data-percent="70">70%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
+                        <h4>JAVASCRIPT</h4>
+                        <div className="bar">
+                          <span data-percent="80">80%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
                         <h4>HTML5</h4>
                         <div className="bar">
                             <span data-percent="95">95%</span>
@@ -84,45 +124,6 @@ function Skill(){
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>TAILWIND CSS</h4>
-                        <div className="bar">
-                          <span data-percent="70">70%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-
-                    <nav id="card" className="card">
-                        <h4>JAVASCRIPT</h4>
-                        <div className="bar">
-                          <span data-percent="80">80%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-                    <nav id="card" className="card">
-                        <h4>Next.js</h4>
-                        <div className="bar">
-                          <span data-percent="65">65%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-
-                    <nav id="card" className="card">
-                        <h4>REACT.js</h4>
-                        <div className="bar">
-                          <span data-percent="85">85%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-
-                    <nav id="card" className="card">
-                        <h4>VUE.js</h4>
-                        <div className="bar">
-                          <span data-percent="60">60%</span>
-                          <small>0%</small>
-                        </div>
-                    </nav>
-
-                    <nav id="card" className="card">
                         <h4>GIT</h4>
                         <div className="bar">
                           <span data-percent="90">90%</span>
@@ -134,6 +135,13 @@ function Skill(){
                         <h4>Framer Motion</h4>
                         <div className="bar">
                           <span data-percent="80">80%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+                    <nav id="card" className="card">
+                        <h4>Material UI</h4>
+                        <div className="bar">
+                          <span data-percent="60">60%</span>
                           <small>0%</small>
                         </div>
                     </nav>
