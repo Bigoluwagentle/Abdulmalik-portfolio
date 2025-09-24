@@ -30,7 +30,7 @@ function Main(){
                         initial = {{opacity:0, y: 100}}
                         whileInView = {{opacity:1, y:0}}
                         transition={{duration: 1, delay:1.5, type: "spring", stiffness: 120}}
-                    >i builds modern, responsive websites and interfaces using Next.js, React.js, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
+                    >i builds modern, responsive websites and interfaces using Next.js, React.js, Typescript Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
                     <motion.button onClick={downloadPDF} 
                         initial ={{x: 100, opacity:0}}
                         whileInView={{x:0, opacity:1, scale:1}}

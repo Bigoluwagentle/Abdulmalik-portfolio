@@ -69,6 +69,14 @@ function Skill(){
                     </nav>
 
                     <nav id="card" className="card">
+                        <h4>Typescript</h4>
+                        <div className="bar">
+                          <span data-percent="60">60%</span>
+                          <small>0%</small>
+                        </div>
+                    </nav>
+
+                    <nav id="card" className="card">
                         <h4>VUE.js</h4>
                         <div className="bar">
                           <span data-percent="60">60%</span>
