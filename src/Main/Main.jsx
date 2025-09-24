@@ -9,7 +9,7 @@ function Main(){
         const pdfUrl = 'Abdulmalik_CV.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'Abdulmalik_CV.docx';
+        link.download = 'Abdulmalik_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
