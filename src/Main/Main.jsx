@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 function Main(){
     
     function downloadPDF() {
-        const pdfUrl = 'Abdulmalik_CV.docx';
+        const pdfUrl = 'Abdulmalik_CV.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
         link.download = 'Abdulmalik_CV.docx';
