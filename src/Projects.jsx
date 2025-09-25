@@ -58,7 +58,7 @@ function Project(){
                     <img src={Buycex} alt="" />
                     <nav class="check">
                         <h4>Buycex Exchange</h4>
-                        <p>Tech: NEXTJS, Javascript and Sass</p>
+                        <p>Tech: NEXTJS, Javascript and Typescript</p>
                         <p>Still ongoing</p>
                         <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>

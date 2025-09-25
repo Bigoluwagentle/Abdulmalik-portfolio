@@ -32,8 +32,8 @@ function Main(){
                         transition={{duration: 1, delay:1.5, type: "spring", stiffness: 120}}
                     >i builds modern, responsive websites and interfaces using Next.js, React.js, Typescript Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
                     <motion.button onClick={downloadPDF} 
-                        initial ={{x: 100, opacity:0}}
-                        whileInView={{x:0, opacity:1, scale:1}}
+                        initial ={{y: 100, opacity:0}}
+                        whileInView={{y:0, opacity:1, scale:1}}
                         transition={{duration:2, delay: 2, type: "spring", stiffness: 200}}
                         whileHover = {{scale:1.1}}
                     >
@@ -48,7 +48,11 @@ function Main(){
             <nav class="ok" id="card">
                 <aside class="about" id="about">
                     <h2 class="p">ABOUT ME</h2>
-                    <p>I’m a Frontend Engineer & Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development—breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same: to create meaningful digital experiences while empowering others to do the same.</p>
+                    <motion.p
+                        initial={{y:100, opacity:0}}
+                        whileInView={{opacity:1, y:0}}
+                        transition={{duration:2}}
+                    >I’m a Frontend Engineer & Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development—breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same: to create meaningful digital experiences while empowering others to do the same.</motion.p>
                 </aside>
                 <aside id="card">
                     <img class="mypic" src={light} alt=""/>
