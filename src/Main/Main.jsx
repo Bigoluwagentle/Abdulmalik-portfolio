@@ -21,9 +21,9 @@ function Main(){
                     <h2 class="you">Hello, I'm</h2>
                     <h1 class="you">Abdulmalik</h1>
                     <motion.h2 class="you"
-                        initial = {{opacity: 0, x: 100}}
-                        whileInView = {{opacity:1, x:0,}}
-                        transition = {{duration:1.5, delay: 0.5}}
+                        initial = {{opacity: 0}}
+                        whileInView = {{opacity:1}}
+                        transition = {{duration:2, delay: 1}}
                         
                     >Frontend Engineer</motion.h2>
                     <motion.p

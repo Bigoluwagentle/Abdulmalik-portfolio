@@ -43,7 +43,6 @@ function Project(){
                 duration: 1, type: "spring", stiffness: 300
             }
         }
-        
     };
     return(
         <div id="allProject">
