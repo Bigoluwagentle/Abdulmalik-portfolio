@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
 import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
 import Buycex from "./img/Screenshot 2025-09-21 093257.png";
-import jennie from "./img/image-thomas.jpg";
+import jennie from "./img/test4.jpg";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/GRMM1yg5.png";
 import Nutrition from "./img/Screenshot 2025-08-28 095318.png";
@@ -57,7 +57,7 @@ function Project(){
                     <img src={Buycex} alt="" />
                     <nav class="check">
                         <h4>Buycex Exchange</h4>
-                        <p>Tech: NEXTJS, Javascript and Typescript</p>
+                        <p>Tech: NEXTJS and Typescript</p>
                         <p>Still ongoing</p>
                         <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                     </nav>
