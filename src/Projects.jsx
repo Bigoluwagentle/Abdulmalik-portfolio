@@ -6,7 +6,7 @@ import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
 import Buycex from "./img/Screenshot 2025-09-21 093257.png";
 import jennie from "./img/image-thomas.jpg";
 import emily from "./img/image-emily.jpg";
-import thomas from "./img/IMG-20250710-WA0058.jpg";
+import thomas from "./img/GRMM1yg5.png";
 import Nutrition from "./img/Screenshot 2025-08-28 095318.png";
 import Movie from "./img/Screenshot 2025-08-26 135936.png";
 import Eccomerce from "./img/Screenshot 2025-08-26 140836.png";
@@ -249,9 +249,9 @@ function Project(){
             <summary>
                 <nav id="card">
                     <img src={thomas} alt=""/>
-                    <p class="text"><q>Abdulmalik was a key part of our frontend team. He contributed reusable components, improved performance, and helped debug tricky layout issues. He’s a problem solver who brings great energy to every sprint</q></p>
-                    <li class="text">Haaj Eth</li>
-                    <p style={{fontSize: "12px"}} class="text">Web3 Director</p>
+                    <p class="text"><q>Abdulmalik is an outstanding frontend tutor. He simplifies complex topics, supports students with real projects, and inspires confidence in every session.</q></p>
+                    <li class="text">Ibrahim</li>
+                    <p style={{fontSize: "12px"}} class="text">Geestack Academy</p>
                 </nav>
                 <nav id="card">
                     <img src={jennie} alt=""/>
