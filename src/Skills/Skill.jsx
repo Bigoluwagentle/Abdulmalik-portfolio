@@ -53,6 +53,9 @@ function Skill(){
                 <h2>Skills</h2>
                 <section>
                     <nav id="card" className="card">
+                        <h4>REACT NATIVE</h4>
+                    </nav>
+                    <nav id="card" className="card">
                         <h4>Next.js</h4>
                     </nav>
 
@@ -61,7 +64,7 @@ function Skill(){
                     </nav>
 
                     <nav id="card" className="card">
-                        <h4>Typescript</h4>
+                        <h4>TYPESCRIPT</h4>
                     </nav>
 
                     <nav id="card" className="card">
@@ -94,9 +97,9 @@ function Skill(){
                     <nav id="card" className="card">
                         <h4>GIT</h4>
                     </nav>
-
+                    
                     <nav id="card" className="card">
-                        <h4>Framer Motion</h4>
+                        <h4>Firebase</h4>
                     </nav>
                     <nav id="card" className="card">
                         <h4>Material UI</h4>

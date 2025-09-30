@@ -30,7 +30,7 @@ function Main(){
                         initial = {{opacity:0, y: 100}}
                         whileInView = {{opacity:1, y:0}}
                         transition={{duration: 1, delay:1.5, type: "spring", stiffness: 120}}
-                    >i builds modern, responsive websites and interfaces using Next.js, React.js, Typescript Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
+                    >i builds modern, responsive web app and mobile app using Next.js, React Native, React.js, Typescript, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
                     <motion.button onClick={downloadPDF} 
                         initial ={{y: 100, opacity:0}}
                         whileInView={{y:0, opacity:1, scale:1}}
@@ -52,7 +52,7 @@ function Main(){
                         initial={{y:100, opacity:0}}
                         whileInView={{opacity:1, y:0}}
                         transition={{duration:2}}
-                    >I’m a Frontend Engineer & Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development—breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same: to create meaningful digital experiences while empowering others to do the same.</motion.p>
+                    >I’m a Frontend Developer, a Mobile App Developer and also a  Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, React Native, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same to create meaningful digital experiences while empowering others to do the same.</motion.p>
                 </aside>
                 <aside id="card">
                     <img class="mypic" src={light} alt=""/>
@@ -87,7 +87,99 @@ function Main(){
                     <h4>Support</h4>
                     <p>Geegstack Academy</p>
                 </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h4>Education</h4>
+                    <p>Undergraduate</p>
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>School</h4>
+                    <p>University of Ibadan</p>
+                </motion.div>
+                {/* <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h4>School</h4>
+                    <p>University of Ibadan</p>
+                </motion.div> */}
             </figure>
+
+            <h2>MY SERVICES</h2>
+            <div id="service">
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Frontend Web Development</h4>
+                    <p>I design and develop modern, responsive websites using React, Next.js, Typescript and Vue. My focus is on delivering fast, interactive, and user-friendly experiences</p>
+                </motion.section>
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 2, delay: 0.2}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>I build cross-platform mobile apps with React Native that run smoothly on both iOS and Android, offering intuitive designs and seamless performance.</p>
+                </motion.section>
+                
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 2, delay:0.4}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>UI/UX Implementation</h4>
+                    <p>I turn creative designs into functional interfaces, ensuring every element is pixel-perfect, accessible, and optimized for user engagement.</p>
+                </motion.section>
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 2, delay:0.5}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Performance Optimization</h4>
+                    <p>I optimize websites and apps for speed, scalability, and smooth performance, making sure they load quickly and work flawlessly across devices.</p>
+                </motion.section>
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 2, delay:0.6}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Custom Web Applications</h4>
+                    <p>I develop tailored web solutions, from dashboards to e-commerce platforms, that meet specific business needs and integrate with modern APIs.</p>
+                </motion.section>
+                <motion.section
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 2, delay:0.3}}
+                    whileHover={{scale:1.1}}
+                >
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Maintenance & Support</h4>
+                    <p>I provide ongoing updates, bug fixes, and feature enhancements to keep websites and apps secure, stable, and aligned with the latest technology trends</p>
+                </motion.section>
+            </div>
             <Footer/>
         </div>
     )
