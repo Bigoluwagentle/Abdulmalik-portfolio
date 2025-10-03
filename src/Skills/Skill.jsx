@@ -56,6 +56,9 @@ function Skill(){
                         <h4>REACT NATIVE</h4>
                     </nav>
                     <nav id="card" className="card">
+                        <h4>EXPO</h4>
+                    </nav>
+                    <nav id="card" className="card">
                         <h4>Next.js</h4>
                     </nav>
 

@@ -87,33 +87,7 @@ function Main(){
                     <h4>Support</h4>
                     <p>Geegstack Academy</p>
                 </motion.div>
-                <motion.div id="card"
-                    initial = {{opacity:0, y: 100}}
-                    whileInView={{opacity:1, y:0}}
-                    transition={{duration: 1, type: "spring", stiffness: 200}}
-                >
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <h4>Education</h4>
-                    <p>Undergraduate</p>
-                </motion.div>
-                <motion.div id="card"
-                    initial = {{opacity:0, y: 100}}
-                    whileInView={{opacity:1, y:0}}
-                    transition={{duration: 1, type: "spring", stiffness: 200}}
-                >
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h4>School</h4>
-                    <p>University of Ibadan</p>
-                </motion.div>
-                {/* <motion.div id="card"
-                    initial = {{opacity:0, y: 100}}
-                    whileInView={{opacity:1, y:0}}
-                    transition={{duration: 1, type: "spring", stiffness: 200}}
-                >
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <h4>School</h4>
-                    <p>University of Ibadan</p>
-                </motion.div> */}
+                
             </figure>
 
             <h2>MY SERVICES</h2>
@@ -180,6 +154,14 @@ function Main(){
                     <p>I provide ongoing updates, bug fixes, and feature enhancements to keep websites and apps secure, stable, and aligned with the latest technology trends</p>
                 </motion.section>
             </div>
+            {/* <h2>EXPERIENCE</h2>
+            <div id="experince">
+                <section>
+                    <h4>Frontend Developer</h4>
+                    <p>Geegstack Academy</p>
+                    <li>I teach and guilde </li>
+                </section>
+            </div> */}
             <Footer/>
         </div>
     )
