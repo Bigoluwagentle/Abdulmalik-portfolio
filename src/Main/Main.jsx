@@ -96,7 +96,6 @@ function Main(){
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
                     transition={{duration: 1}}
-                    whileHover={{scale:1.1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>Frontend Web Development</h4>
@@ -105,8 +104,7 @@ function Main(){
                 <motion.section
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
-                    transition={{duration: 2, delay: 0.2}}
-                    whileHover={{scale:1.1}}
+                    transition={{duration: 1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>Mobile App Development</h4>
@@ -116,8 +114,7 @@ function Main(){
                 <motion.section
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
-                    transition={{duration: 2, delay:0.4}}
-                    whileHover={{scale:1.1}}
+                    transition={{duration: 1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>UI/UX Implementation</h4>
@@ -126,8 +123,7 @@ function Main(){
                 <motion.section
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
-                    transition={{duration: 2, delay:0.5}}
-                    whileHover={{scale:1.1}}
+                    transition={{duration: 1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>Performance Optimization</h4>
@@ -136,8 +132,7 @@ function Main(){
                 <motion.section
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
-                    transition={{duration: 2, delay:0.6}}
-                    whileHover={{scale:1.1}}
+                    transition={{duration: 1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>Custom Web Applications</h4>
@@ -146,22 +141,59 @@ function Main(){
                 <motion.section
                     initial = {{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
-                    transition={{duration: 2, delay:0.3}}
-                    whileHover={{scale:1.1}}
+                    transition={{duration: 1}}
                 >
                     <i class="fa-solid fa-code"></i>
                     <h4>Maintenance & Support</h4>
                     <p>I provide ongoing updates, bug fixes, and feature enhancements to keep websites and apps secure, stable, and aligned with the latest technology trends</p>
                 </motion.section>
             </div>
-            {/* <h2>EXPERIENCE</h2>
+            <h2>EXPERIENCE</h2>
             <div id="experince">
                 <section>
-                    <h4>Frontend Developer</h4>
-                    <p>Geegstack Academy</p>
-                    <li>I teach and guilde </li>
+                    <motion.aside
+                        initial={{y:-100, opacity:0}}
+                        whileInView={{y:0, opacity:1}}
+                        transition={{duration:1}}
+                    >
+                        <h4>Frontend Developer</h4>
+                        <p>GEEGSTACK ACADEMY</p>
+                        <li>April 2025 - present</li>
+                        <li>- Teach students the fundamentals of frontend development including HTML, CSS, and JavaScript</li>
+                        <li>- Guide learners through building real-world projects with React.js</li>
+                        <li>- Explain API integration, and responsive design principles in simple, practical terms</li>
+                        <li>- Encourage hands-on coding, teamwork, and problem-solving during classes.</li>
+                    </motion.aside>
                 </section>
-            </div> */}
+                <section>
+                    <motion.aside
+                        initial={{y:100, opacity:0}}
+                        whileInView={{y:0, opacity:1}}
+                        transition={{duration:1}}
+                    >
+                        <h4>Frontend Developer</h4>
+                        <p>TOO SOFT COLLECTION</p>
+                        <li>Freelance</li>
+                        <li>- E-ccomerce website that sells cloth</li>
+                        <li>- Build the website with Reactjs and Javascript</li>
+                        <li>- It list all the products image and price.</li>
+                    </motion.aside>
+                </section>
+                <section>
+                    <motion.aside
+                        initial={{y:-100, opacity:0}}
+                        whileInView={{y:0, opacity:1}}
+                        transition={{duration:1}}
+                    >
+                        <h4>Frontend Developer</h4>
+                        <p>OYAB AUTOS</p>
+                        <li>Freelance</li>
+                        <li>- E-ccomerce website that sells vehicle</li>
+                        <li>- Build with the lastest framework Nextjs, Javascript and JSON</li>
+                        <li>- It list all the cars image, price and description of each cars.</li>
+                    </motion.aside>
+                </section>
+            </div>
             <Footer/>
         </div>
     )

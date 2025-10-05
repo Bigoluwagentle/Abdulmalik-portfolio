@@ -120,6 +120,51 @@
             }
         }
     }
+    #experince{
+        margin-top: 50px;
+        > section{
+            display: flex;
+            justify-content: end;
+            padding-right: 20px;
+            + section{
+                justify-content: start;
+                margin-left: 20px;
+                + section{
+                    justify-content: end;
+                }
+            }
+            > aside{
+                width: 50%;
+                min-height: 30vh;
+                background-color: #ffffff;
+                padding-bottom: 20px;
+                border-radius: 8px;
+                > h4{
+                    color: #134455;
+                    margin: 30px 0px 5px 30px;
+                    font-size: 1.8rem;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+                > p{
+                    color: black;
+                    margin-left: 30px;
+                    + li{
+                        color: black;
+                        font-style: italic;
+                        margin-left: 30px;
+                        margin-top: 10px;
+                        list-style-type: none;
+                    }
+                }
+                > li{
+                    list-style-type: none;
+                    color: black;
+                    margin-left: 20px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 909px){
@@ -129,7 +174,7 @@
             align-items: center;
             > section{
                 > p{
-                    width: 95%;
+                    width: 100%;
                 }
             }
             
@@ -169,6 +214,27 @@
                     margin-bottom: 100px;
                     min-height: 33vh;
                     padding-bottom: 30px;
+                }
+            }
+        }
+        > #experince{
+            > section{
+                justify-content: center;
+                align-items: center;
+                padding-left: 0px;
+                margin-bottom: 50px;
+                + section{
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0px;
+                    + section{
+
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                > aside{
+                    width: 90%;
                 }
             }
         }
