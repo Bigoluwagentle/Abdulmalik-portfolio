@@ -158,7 +158,7 @@ function Main(){
                     >
                         <h4>Frontend Developer</h4>
                         <p>GEEGSTACK ACADEMY</p>
-                        <li>April 2025 - present</li>
+                        <li>April 2024 - present</li>
                         <li>- Teach students the fundamentals of frontend development including HTML, CSS, and JavaScript</li>
                         <li>- Guide learners through building real-world projects with React.js</li>
                         <li>- Explain API integration, and responsive design principles in simple, practical terms</li>

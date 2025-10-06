@@ -39,10 +39,10 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_mjig3uf",       // your EmailJS service ID service_mjig3uf
-      "template_704dmhp",      // your EmailJS template ID
-      e.target,                // form element
-      "TuWLoTBD5rPIKrcGa"      // your EmailJS public key
+      "service_mjig3uf",      
+      "template_704dmhp",    
+      e.target,              
+      "TuWLoTBD5rPIKrcGa"   
     )
     .then(() => {
       alert("Message Sent Successfully ✅. We will get back to you very soon");
@@ -105,6 +105,19 @@ function Contact() {
                 </Button>
               </Stack>
             </nav>
+            <Stack style={{marginTop: "20px"}}>
+              <Button variant="contained" color="primary" onClick={() => {
+                let a = document.createElement("a");
+                a.href = "https://wa.me/9076956531";
+                a.target = "_blank";
+                document.querySelector("body").appendChild(a);
+                document.querySelector("body").removeChild(a)
+                a.click();
+              }}>
+                Chat on Whatsapp
+            </Button>
+            </Stack>
+            
           </form>
         </div>
       </div>

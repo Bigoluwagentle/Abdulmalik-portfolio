@@ -117,7 +117,7 @@
         > article{
             flex-direction: column;
             > div{
-                width: 90%;
+                width: 100%;
                 min-height: 50vh;
                 margin-bottom: 40px;
                 background-color: rgb(38, 35, 35);

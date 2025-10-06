@@ -109,13 +109,14 @@
                 }
                 > h4{
                     margin-top: 20px;
-                    color: #134544;
+                    color: #F2F2F2;
                     font-size: 1.3rem;
                     margin-bottom: 30px;
                 }
                 > p{
                     line-height: 23px;
                     letter-spacing: 1px;
+                    color: #e3dfdf;
                 }
             }
         }
