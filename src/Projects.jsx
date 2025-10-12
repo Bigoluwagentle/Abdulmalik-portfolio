@@ -72,7 +72,10 @@ function Project(){
                     <nav class="check">
                         <h4>Car Repair</h4>
                         <p>Tech: REACT, Javascript and API</p>
-                        <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button>
+                        </nav>
                     </nav>
                 </motion.div>
                 <motion.div id="ai" 

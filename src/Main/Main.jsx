@@ -4,7 +4,16 @@ import ji from "../img/ji.jpg";
 import light from "../img/light.jpg";
 import Footer from "../Footer/Footer";
 function Main(){
-    
+    function addUrl(urlin){
+        let urlink = "";
+        urlink = urlin;
+        const link = document.createElement("a");
+        link.href = urlink;
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     function downloadPDF() {
         const pdfUrl = 'Abdulmalik_CV.pdf';
         const link = document.createElement('a');
@@ -167,16 +176,29 @@ function Main(){
                 </section>
                 <section>
                     <motion.aside
+                        initial={{y:-100, opacity:0}}
+                        whileInView={{y:0, opacity:1}}
+                        transition={{duration:1}}
+                    >
+                        <h4>Mobile App Developer</h4>
+                        <p>FixMate</p>
+                        <li>Developed a mobile application for hiring professional handymen.</li>
+                        <li>Built using modern technologies — React Native, Expo, and OpenAI integration.</li>
+                        <li>Implemented dynamic service listings featuring plumbing, cleaning, and mechanic categories.</li>
+                        <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button>
+                    </motion.aside>
+                </section>
+                <section>
+                    <motion.aside
                         initial={{y:100, opacity:0}}
                         whileInView={{y:0, opacity:1}}
                         transition={{duration:1}}
                     >
                         <h4>Frontend Developer</h4>
-                        <p>TOO SOFT COLLECTION</p>
-                        <li>Freelance</li>
-                        <li>- E-ccomerce website that sells cloth</li>
-                        <li>- Build the website with Reactjs and Javascript</li>
-                        <li>- It list all the products image and price.</li>
+                        <p><strong>TOO SOFT COLLECTION</strong> — Freelance</p>
+                        <li>Developed a fully responsive e-commerce website for a clothing brand.</li>
+                        <li>Built with React.js and JavaScript to display product images, prices, and details.</li>
+                        <li>Implemented dynamic product listings to enhance user experience and engagement.</li>
                     </motion.aside>
                 </section>
                 <section>
@@ -186,11 +208,11 @@ function Main(){
                         transition={{duration:1}}
                     >
                         <h4>Frontend Developer</h4>
-                        <p>OYAB AUTOS</p>
+                        <p><strong>OYAB AUTOS</strong> — Freelance</p>
                         <li>Freelance</li>
-                        <li>- E-ccomerce website that sells vehicle</li>
-                        <li>- Build with the lastest framework Nextjs, Javascript and JSON</li>
-                        <li>- It list all the cars image, price and description of each cars.</li>
+                        <li>Developed an e-commerce platform for a vehicle dealership.</li>
+                        <li>Built with the latest technologies — Next.js, JavaScript, and JSON for data management.</li>
+                        <li>Implemented dynamic car listings displaying images, prices, and detailed descriptions.</li>
                     </motion.aside>
                 </section>
             </div>
