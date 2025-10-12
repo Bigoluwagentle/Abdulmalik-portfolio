@@ -59,7 +59,9 @@ function Project(){
                         <h4>Buycex Exchange</h4>
                         <p>Tech: NEXTJS, Javascript and Typescript</p>
                         <p>Still ongoing</p>
-                        <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
                 <motion.div id="portfolio"
@@ -87,7 +89,9 @@ function Project(){
                     <nav class="check">
                         <h4>AI NUTRITIONIST</h4>
                         <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -100,7 +104,9 @@ function Project(){
                     <nav className="check">
                         <h4>Creative Jobboard</h4>
                         <p>Tech:REACT AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -113,7 +119,9 @@ function Project(){
                     <nav class="check">
                         <h4>Burger Store</h4>
                         <p>Tech: REACT AND API</p>
-                        <button onClick={() => addUrl("https://code-with-faith-burger-home.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://code-with-faith-burger-home.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -127,7 +135,9 @@ function Project(){
                     <nav class="check">
                         <h4>E-CCOMERCE</h4>
                         <p>Tech: REACT, JSON AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -141,7 +151,9 @@ function Project(){
                     <nav class="check">
                         <h4>Car Dealer</h4>
                         <p>Tech: REACT AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -156,7 +168,9 @@ function Project(){
                     <nav class="check">
                         <h4>Recipe</h4>
                         <p>Tech: REACT AND API</p>
-                        <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
                 
@@ -169,7 +183,9 @@ function Project(){
                     <nav class="check">
                         <h4>Movie Website</h4>
                         <p>Tech: HTML, API AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
                 <motion.div 
@@ -182,7 +198,9 @@ function Project(){
                     <nav class="check">
                         <h4>Job-Board</h4>
                         <p>Tech: REACT, API AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
                 
@@ -196,7 +214,9 @@ function Project(){
                     <nav class="check">
                         <h4>Al-Quran Audio</h4>
                         <p>Tech: REACT AND API</p>
-                        <button onClick={() => addUrl("https://abdulmalik-phi.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-phi.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -209,7 +229,9 @@ function Project(){
                     <nav class="check">
                         <h4>Skin Care</h4>
                         <p>Tech: REACT</p>
-                        <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -222,7 +244,9 @@ function Project(){
                     <nav class="check">
                         <h4>URL Shorten</h4>
                         <p>Tech: REACT AND JAVASCRIPT</p>
-                        <button onClick={() => addUrl("https://abdulmalik-url-shorten.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-url-shorten.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -235,7 +259,9 @@ function Project(){
                     <nav class="check">
                         <h4>Weather App</h4>
                         <p>Tech: REACT AND API</p>
-                        <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </motion.div>
 
@@ -244,7 +270,9 @@ function Project(){
                     <nav className="check">
                         <h4>My Blog</h4>
                         <p>Tech: REACT</p>
-                        <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
                     </nav>
                 </div>
             </article>
