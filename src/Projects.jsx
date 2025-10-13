@@ -73,7 +73,7 @@ function Project(){
                     <img src={Portfolio} alt="" />
                     <nav class="check">
                         <h4>Car Repair</h4>
-                        <p>Tech: REACT, Javascript and API</p>
+                        <p>Tech: REACT, Javascript, API & REACT NAVITE & EXPO</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button>
@@ -103,9 +103,10 @@ function Project(){
                     <img src={Creative} alt="" />
                     <nav className="check">
                         <h4>Creative Jobboard</h4>
-                        <p>Tech:REACT AND JAVASCRIPT</p>
+                        <p>Tech:REACT,  JAVASCRIPT & REACT NAVITE, EXPO</p>
                         <nav>
                             <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <button onClick={() => addUrl(" https://expo.dev/artifacts/eas/amwkmkZ1J4WVruNJB4qf26.apk")}>Download App <i class="fa-solid fa-eye-slash"></i></button>
                         </nav>
                     </nav>
                 </motion.div>

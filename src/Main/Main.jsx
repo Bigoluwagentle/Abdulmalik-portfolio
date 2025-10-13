@@ -167,7 +167,7 @@ function Main(){
                     >
                         <h4>Frontend Developer</h4>
                         <p>GEEGSTACK ACADEMY</p>
-                        <li>April 2024 - present</li>
+                        <li>April 2025 - present</li>
                         <li>- Teach students the fundamentals of frontend development including HTML, CSS, and JavaScript</li>
                         <li>- Guide learners through building real-world projects with React.js</li>
                         <li>- Explain API integration, and responsive design principles in simple, practical terms</li>
@@ -181,10 +181,10 @@ function Main(){
                         transition={{duration:1}}
                     >
                         <h4>Mobile App Developer</h4>
-                        <p>FixMate</p>
-                        <li>Developed a mobile application for hiring professional handymen.</li>
-                        <li>Built using modern technologies — React Native, Expo, and OpenAI integration.</li>
-                        <li>Implemented dynamic service listings featuring plumbing, cleaning, and mechanic categories.</li>
+                        <p><strong>FixMate</strong></p>
+                        <li>- Developed a mobile application for hiring professional handymen.</li>
+                        <li>- Built using modern technologies — React Native, Expo, and OpenAI integration.</li>
+                        <li>- Implemented dynamic service listings featuring plumbing, cleaning, and mechanic categories.</li>
                         <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button>
                     </motion.aside>
                 </section>
@@ -196,9 +196,9 @@ function Main(){
                     >
                         <h4>Frontend Developer</h4>
                         <p><strong>TOO SOFT COLLECTION</strong> — Freelance</p>
-                        <li>Developed a fully responsive e-commerce website for a clothing brand.</li>
-                        <li>Built with React.js and JavaScript to display product images, prices, and details.</li>
-                        <li>Implemented dynamic product listings to enhance user experience and engagement.</li>
+                        <li>- Developed a fully responsive e-commerce website for a clothing brand.</li>
+                        <li>- Built with React.js and JavaScript to display product images, prices, and details.</li>
+                        <li>- Implemented dynamic product listings to enhance user experience and engagement.</li>
                     </motion.aside>
                 </section>
                 <section>
@@ -210,9 +210,9 @@ function Main(){
                         <h4>Frontend Developer</h4>
                         <p><strong>OYAB AUTOS</strong> — Freelance</p>
                         <li>Freelance</li>
-                        <li>Developed an e-commerce platform for a vehicle dealership.</li>
-                        <li>Built with the latest technologies — Next.js, JavaScript, and JSON for data management.</li>
-                        <li>Implemented dynamic car listings displaying images, prices, and detailed descriptions.</li>
+                        <li>- Developed an e-commerce platform for a vehicle dealership.</li>
+                        <li>- Built with the latest technologies — Next.js, JavaScript, and JSON for data management.</li>
+                        <li>- Implemented dynamic car listings displaying images, prices, and detailed descriptions.</li>
                     </motion.aside>
                 </section>
             </div>
