@@ -128,6 +128,11 @@
                 min-height: 50vh;
                 margin-bottom: 40px;
                 background-color: rgb(38, 35, 35);
+                > nav{
+                    > nav{
+                        flex-direction: column;
+                    }
+                }
             }
         }
         summary{

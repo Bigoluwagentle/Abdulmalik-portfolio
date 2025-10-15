@@ -73,6 +73,9 @@ function Skill(){
                     <nav id="card" className="card">
                         <h4>VUE.js</h4>
                     </nav>
+                    <nav id="card" className="card">
+                        <h4>REDUX</h4>
+                    </nav>
 
                     <nav id="card" className="card">
                         <h4>TAILWIND CSS</h4>
