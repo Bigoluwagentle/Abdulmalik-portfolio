@@ -239,15 +239,28 @@
                 align-items: center;
                 padding-left: 0px;
                 margin-bottom: 50px;
+                padding-right: 0px;
                 + section{
                     justify-content: center;
                     align-items: center;
                     margin-left: 0px;
+                    > aside{
+                        > button{
+                            width: 90%;
+                            margin-left: 5px;
+                        }
+                    }
+                    
                     + section{
 
                         justify-content: center;
                         align-items: center;
+                        + section{
+                            justify-content: center;
+                            align-items: center;
+                        }
                     }
+
                 }
                 > aside{
                     width: 90%;

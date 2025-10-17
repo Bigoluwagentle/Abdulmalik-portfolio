@@ -181,7 +181,7 @@ function Main(){
                         transition={{duration:1}}
                     >
                         <h4>Mobile App Developer</h4>
-                        <p><strong>FixMate</strong></p>
+                        {/* <p><strong>FixMate</strong></p> */}
                         <li>- Developed a mobile application for hiring professional handymen.</li>
                         <li>- Built using modern technologies — React Native, Expo, and OpenAI integration.</li>
                         <li>- Implemented dynamic service listings featuring plumbing, cleaning, and mechanic categories.</li>
