@@ -20,6 +20,7 @@ import Blog from "./img/Screenshot 2025-08-27 024215.png";
 import Job from "./img/Screenshot 2025-08-27 061615.png";
 import Burger from "./img/Screenshot 2025-08-30 073238.png";
 import Creative from "./img/creative.png";
+import Edu from "./img/edu.png";
 function Project(){
     function addUrl(urlin){
         let urlink = "";
@@ -61,6 +62,21 @@ function Project(){
                         <p>Still ongoing</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                        </nav>
+                    </nav>
+                </motion.div>
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
+                    <img src={Edu} alt="" />
+                    <nav class="check">
+                        <h4>Adult-Edu</h4>
+                        <p>Tech: NEXTJS, Javascript and Framer motion</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://adult-edu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                         </nav>
                     </nav>
                 </motion.div>
@@ -265,17 +281,6 @@ function Project(){
                         </nav>
                     </nav>
                 </motion.div>
-
-                <div>
-                <img src={Blog} alt="" />
-                    <nav className="check">
-                        <h4>My Blog</h4>
-                        <p>Tech: REACT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-blog.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                        </nav>
-                    </nav>
-                </div>
             </article>
 
             <summary>

@@ -1,5 +1,6 @@
 import Footer from "../Footer/Footer";
 import "./Skill.css";
+// import RecatNative from "../img/reactNative.png";
 import { useEffect } from "react";
 function Skill(){
     useEffect(() => {
@@ -53,7 +54,10 @@ function Skill(){
                 <h2>Skills</h2>
                 <section>
                     <nav id="card" className="card">
-                        <h4>REACT NATIVE</h4>
+                        <h4>
+                            {/* <img src={RecatNative} alt="RecatNative" /> */}
+                            REACT NATIVE
+                        </h4>
                     </nav>
                     <nav id="card" className="card">
                         <h4>EXPO</h4>
