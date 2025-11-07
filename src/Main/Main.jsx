@@ -1,5 +1,6 @@
 import "./Main.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Illustration from "../img/illustration.svg";
 import light from "../img/light.jpg";
 import Footer from "../Footer/Footer";
@@ -43,7 +44,7 @@ function Main(){
                     <motion.button onClick={downloadPDF} 
                         initial ={{y: 100, opacity:0}}
                         whileInView={{y:0, opacity:1, scale:1}}
-                        transition={{duration:2, delay: 1, type: "spring", stiffness: 200}}
+                        transition={{duration:2, type: "spring", stiffness: 200}}
                         whileHover = {{scale:1.1}}
                     >
                         <i className="fa-solid fa-download"></i>
@@ -53,8 +54,11 @@ function Main(){
                     <motion.button 
                         initial ={{y: 100, opacity:0}}
                         whileInView={{y:0, opacity:1, scale:1}}
-                        transition={{duration:2, delay: 1, type: "spring", stiffness: 200}}
+                        transition={{duration:2, type: "spring", stiffness: 200}}
                         whileHover = {{scale:1.1}}
+                        onClick={() => {
+                            document.querySelector("#proj").click()
+                        }}
                     >
                         View My Work
                     </motion.button>
@@ -81,7 +85,9 @@ function Main(){
                         whileInView={{y:0}}
                         transition={{duration:1}}
                     > Whether I’m coding a new interface or mentoring students, my goal remains the same to build meaningful digital products that help <strong>businesses grow</strong> and <strong>empower people through technology</strong>.</motion.p>
-                    <button>View my Skills</button>
+                    <button onClick={() => {
+                        document.querySelector("#skil").click()
+                    }}>View my Skills</button>
                 </aside>
                 <aside id="card">
                     <img className="mypic" src={light} alt=""/>
@@ -210,7 +216,6 @@ function Main(){
                         transition={{duration:1}}
                     >
                         <h4>Mobile App Developer</h4>
-                        {/* <p><strong>FixMate</strong></p> */}
                         <li>- Developed a mobile application for hiring professional handymen.</li>
                         <li>- Built using modern technologies — React Native, Expo, and OpenAI integration.</li>
                         <li>- Implemented dynamic service listings featuring plumbing, cleaning, and mechanic categories.</li>
@@ -244,6 +249,8 @@ function Main(){
                         <li>- Implemented dynamic car listings displaying images, prices, and detailed descriptions.</li>
                     </motion.aside>
                 </section>
+                <Link to="/Projects" id="proj"></Link>
+                <Link to="/Skills" id="skil"></Link>
             </div>
             <Footer/>
         </div>

@@ -26,6 +26,9 @@ function Footer(){
                     initial={{x:-100}}
                     whileInView={{x:0}}
                     transition={{type:"spring", stiffness: 130}}
+                    onClick={() => {
+                        document.querySelector("#cont").click();
+                    }}
                 >Let’s talk about your project</motion.button>
             </section>
             <footer id="contact">
@@ -47,7 +50,7 @@ function Footer(){
                             document.querySelector("#project").click();
                         }}>PROJECTS</a>
                         <a href="#" class="a" onClick={() => {
-                            document.querySelector("#contact").click();
+                            document.querySelector("#cont").click();
                         }}>CONTACT</a>
                     </div>
 
@@ -80,7 +83,7 @@ function Footer(){
                 <Link id="about" to="/"/>
                 <Link id="skill" to="/Skills"/>
                 <Link id="project" to="/Projects"/>
-                <Link id="contact" to="/Contact"/>
+                <Link id="cont" to="/Contact"/>
             </footer>
             <p>Design by Abdulmalik with Reactjs.</p>
         </div>
