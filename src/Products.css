@@ -46,6 +46,7 @@
                 > nav{
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     width: 95%;
                    > button{
                         display: inline-block;
@@ -63,6 +64,12 @@
                             background-color: #355555;
                         }
                     } 
+                    > li{
+                        list-style-type: none;
+                        > i{
+                            color: white;
+                        }
+                    }
                 }
                 
             }

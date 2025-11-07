@@ -1,5 +1,5 @@
 #main{
-    margin-top: 150px;
+    margin-top: 100px;
     main{
         margin-top: 60px;
         padding: 30px;
@@ -14,29 +14,41 @@
             }
             > h1{
                 font-size: 60px;
-                margin-bottom: 10px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
             > p {
                 width: 80%;
                 line-height: 23px;
+                margin-top: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             > button{
                 background-color: #135455;
                 color: #ffffff;
-                padding: 0.6rem 1.2rem;
                 border: none;
                 border-radius: 6px;
                 font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 cursor: pointer;
                 transition:  background-color 0.2s ease;
                 margin-top: 20px;
+                min-width: 180px;
+                min-height: 45px;
                 &:hover{
                     background-color: #455555;
                 }
                 > i{
                     margin-right: 7px;
                 }
+                + button{
+                    margin-left: 20px;
+                    background-color: #F2F2F2;
+                    color: #134455;
+                }
             }
+        }
+        > img{
+            width: 40%;
         }
     }
     nav{
@@ -48,10 +60,30 @@
         > aside{
             > h2{
                 margin-bottom: 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             > p{
                 line-height: 30px;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            > button{
+                background-color: #135455;
+                color: #ffffff;
+                border: none;
+                border-radius: 6px;
+                font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                cursor: pointer;
+                transition:  background-color 0.2s ease;
+                margin-top: 20px;
+                min-width: 180px;
+                min-height: 45px;
+                &:hover{
+                    background-color: #455555;
+                }
+                
             }
             > div{
                 display: flex;
@@ -192,11 +224,22 @@
                 > p{
                     width: 100%;
                 }
+                > button{
+                    min-width: 250px;
+                    min-height: 50px;
+                    + button{
+                        margin-left: 0px;
+                        display: block;
+
+                    }
+                }
+            }
+            > img{
+                width: 100%;
             }
             
         }
         main > img{
-            width: 300px;
             margin-top: 60px;
         }
         nav.ok{

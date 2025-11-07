@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect } from "react";
+import LikeButton from "./LikeButton"
 import "./Products.css";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
@@ -15,12 +17,12 @@ import Recipe from "./img/Screenshot 2025-08-26 141603.png";
 import Alquran from "./img/Screenshot 2025-08-26 141924.png";
 import Skin from "./img/Screenshot 2025-08-26 142246.png";
 import Url from "./img/Screenshot 2025-08-26 142503.png";
-import Weather from "./img/Screenshot 2025-08-27 023114.png";
-import Blog from "./img/Screenshot 2025-08-27 024215.png";
+import Audiophile from "./img/audiophile.png"
 import Job from "./img/Screenshot 2025-08-27 061615.png";
 import Burger from "./img/Screenshot 2025-08-30 073238.png";
 import Creative from "./img/creative.png";
 import Edu from "./img/edu.png";
+
 function Project(){
     function addUrl(urlin){
         let urlink = "";
@@ -32,7 +34,7 @@ function Project(){
         link.click();
         document.body.removeChild(link);
     }
-
+    
     const containerVariants = {
         hidden: {
             opacity: 0, 
@@ -55,13 +57,30 @@ function Project(){
                     whileInView="visible"
                     exit="exit"
                 >
+                    <img src={Audiophile} alt="" />
+                    <nav class="check">
+                        <h4>Adiophile</h4>
+                        <p>Tech: NEXTJS, TYPESCRIPT and CONVEX</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://audiophile-539a.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="adiophile" />
+                        </nav>
+                    </nav>
+                </motion.div>
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
                     <img src={Buycex} alt="" />
                     <nav class="check">
                         <h4>Buycex Exchange</h4>
-                        <p>Tech: NEXTJS, Javascript and Typescript</p>
+                        <p>Tech: NEXTJS and Framer Motion</p>
                         <p>Still ongoing</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="buycex" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -74,39 +93,10 @@ function Project(){
                     <img src={Edu} alt="" />
                     <nav class="check">
                         <h4>Adult-Edu</h4>
-                        <p>Tech: NEXTJS, Javascript and Framer motion</p>
+                        <p>Tech: NEXTJS and FIREBASE</p>
                         <nav>
                             <button onClick={() => addUrl("https://adult-edu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                        </nav>
-                    </nav>
-                </motion.div>
-                <motion.div id="portfolio"
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Portfolio} alt="" />
-                    <nav class="check">
-                        <h4>Car Repair</h4>
-                        <p>Tech: REACT, Javascript, API & REACT NAVITE & EXPO</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button>
-                        </nav>
-                    </nav>
-                </motion.div>
-                <motion.div id="ai" 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Nutrition} alt="" />
-                    <nav class="check">
-                        <h4>AI NUTRITIONIST</h4>
-                        <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="adult" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -122,10 +112,50 @@ function Project(){
                         <p>Tech:REACT,  JAVASCRIPT & REACT NAVITE, EXPO</p>
                         <nav>
                             <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <button onClick={() => addUrl(" https://expo.dev/artifacts/eas/amwkmkZ1J4WVruNJB4qf26.apk")}>Download App <i class="fa-solid fa-eye-slash"></i></button>
+                            {/* <button onClick={() => addUrl(" https://expo.dev/artifacts/eas/amwkmkZ1J4WVruNJB4qf26.apk")}>Download App <i class="fa-solid fa-eye-slash"></i></button> */}
+                            <LikeButton projectId="creative" />
+
                         </nav>
                     </nav>
                 </motion.div>
+                
+                <motion.div id="ai" 
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <img src={Nutrition} alt="" />
+                    <nav class="check">
+                        <h4>AI NUTRITIONIST</h4>
+                        <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="nutritionist" />
+                        </nav>
+                    </nav>
+                </motion.div>
+                
+
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
+                    <img src={Portfolio} alt="" />
+                    <nav class="check">
+                        <h4>Car Repair</h4>
+                        <p>Tech: REACT, Javascript, API & REACT NAVITE & EXPO</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            {/* <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button> */}
+                            <LikeButton projectId="carrepair" />
+                        </nav>
+                    </nav>
+                </motion.div>
+                
+
+                
 
                 <motion.div
                     variants={containerVariants}
@@ -138,6 +168,7 @@ function Project(){
                         <p>Tech: REACT AND API</p>
                         <nav>
                             <button onClick={() => addUrl("https://code-with-faith-burger-home.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="burger" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -154,6 +185,7 @@ function Project(){
                         <p>Tech: REACT, JSON AND JAVASCRIPT</p>
                         <nav>
                             <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="ecommerce" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -170,6 +202,7 @@ function Project(){
                         <p>Tech: REACT AND JAVASCRIPT</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="cardealer" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -187,6 +220,7 @@ function Project(){
                         <p>Tech: REACT AND API</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="recipe" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -202,6 +236,7 @@ function Project(){
                         <p>Tech: HTML, API AND JAVASCRIPT</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="movie" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -217,6 +252,7 @@ function Project(){
                         <p>Tech: REACT, API AND JAVASCRIPT</p>
                         <nav>
                             <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="jobboard" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -233,6 +269,7 @@ function Project(){
                         <p>Tech: REACT AND API</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-phi.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="alquran" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -248,6 +285,7 @@ function Project(){
                         <p>Tech: REACT</p>
                         <nav>
                             <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="skincare" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -263,24 +301,11 @@ function Project(){
                         <p>Tech: REACT AND JAVASCRIPT</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-url-shorten.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="urlshoten" />
                         </nav>
                     </nav>
                 </motion.div>
 
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Weather} alt="" />
-                    <nav class="check">
-                        <h4>Weather App</h4>
-                        <p>Tech: REACT AND API</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://weather-app-two-khaki-77.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                        </nav>
-                    </nav>
-                </motion.div>
             </article>
 
             <summary>

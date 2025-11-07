@@ -1,6 +1,6 @@
 import "./Main.css";
 import { motion } from "framer-motion";
-import ji from "../img/ji.jpg";
+import Illustration from "../img/illustration.svg";
 import light from "../img/light.jpg";
 import Footer from "../Footer/Footer";
 function Main(){
@@ -32,36 +32,56 @@ function Main(){
                     <motion.h2 className="you"
                         initial = {{opacity: 0}}
                         whileInView = {{opacity:1}}
-                        transition = {{duration:2, delay: 1}}
+                        transition = {{duration:2}}
                         
-                    >Frontend Engineer</motion.h2>
+                    >Frontend & Mobile Developer | Tutor | Problem Solver</motion.h2>
                     <motion.p
                         initial = {{opacity:0, y: 100}}
                         whileInView = {{opacity:1, y:0}}
-                        transition={{duration: 1, delay:1.5, type: "spring", stiffness: 120}}
-                    >i builds modern, responsive web app and mobile app using Next.js, React Native, React.js, Typescript, Vue.js, TailwindCSS, JavaScript and APIs. I focus on clean design and performance.</motion.p>
+                        transition={{duration: 1, type: "spring", stiffness: 120}}
+                    >I help businesses grow online by building fast, modern, and responsive web and mobile apps. Using Next.js, TypeScript, React, React Native, and TailwindCSS, I create clean, high-performing digital experiences that attract customers and drive revenue.</motion.p>
                     <motion.button onClick={downloadPDF} 
                         initial ={{y: 100, opacity:0}}
                         whileInView={{y:0, opacity:1, scale:1}}
-                        transition={{duration:2, delay: 2, type: "spring", stiffness: 200}}
+                        transition={{duration:2, delay: 1, type: "spring", stiffness: 200}}
                         whileHover = {{scale:1.1}}
                     >
                         <i className="fa-solid fa-download"></i>
                         Download CV
                         
                     </motion.button>
+                    <motion.button 
+                        initial ={{y: 100, opacity:0}}
+                        whileInView={{y:0, opacity:1, scale:1}}
+                        transition={{duration:2, delay: 1, type: "spring", stiffness: 200}}
+                        whileHover = {{scale:1.1}}
+                    >
+                        View My Work
+                    </motion.button>
                 </section>
-                <img src={ji} id="card" className="change" width="400px" alt=""/>
+                <img src={Illustration} alt="illustrtion" />
             </main>
 
             <nav className="ok" id="card">
                 <aside className="about" id="about">
                     <h2 className="p">ABOUT ME</h2>
                     <motion.p
-                        initial={{y:100, opacity:0}}
-                        whileInView={{opacity:1, y:0}}
-                        transition={{duration:2}}
-                    >I’m a Frontend Developer, a Mobile App Developer and also a  Tutor passionate about building modern, responsive, and user-friendly web applications. Skilled in Next.js, React, React Native, Vue, Tailwind CSS, HTML, CSS, and JavaScript, I specialize in creating sleek interfaces that combine performance with great design. As a tutor, I enjoy sharing knowledge and helping others grow in frontend development breaking down complex concepts into simple, practical lessons. Teaching has also sharpened my own skills, giving me a deeper understanding of how to write clean, scalable, and maintainable code. Whether I’m coding or teaching, my goal is the same to create meaningful digital experiences while empowering others to do the same.</motion.p>
+                        initial={{y:100}}
+                        whileInView={{y:0}}
+                        transition={{duration:1}}
+                    >I’m a <strong> Frontend and Mobile App Developer </strong> with a passion for building modern, responsive, and user-focused digital experiences. I specialize in creating sleek, high-performance interfaces using <strong> Next.js, React, React Native, Vue, Tailwind CSS, and TypeScript. </strong></motion.p>
+
+                    <motion.p
+                        initial={{y:100}}
+                        whileInView={{y:0}}
+                        transition={{duration:1}}
+                    > Beyond development, I’m also a <strong>Tutor</strong> who enjoys breaking down complex frontend concepts into simple, practical lessons. Teaching has strengthened my ability to write <strong>clean, scalable, and maintainable code</strong>, while inspiring others to grow in tech.</motion.p>
+                    <motion.p
+                        initial={{y:100}}
+                        whileInView={{y:0}}
+                        transition={{duration:1}}
+                    > Whether I’m coding a new interface or mentoring students, my goal remains the same to build meaningful digital products that help <strong>businesses grow</strong> and <strong>empower people through technology</strong>.</motion.p>
+                    <button>View my Skills</button>
                 </aside>
                 <aside id="card">
                     <img className="mypic" src={light} alt=""/>
@@ -86,6 +106,15 @@ function Main(){
                     <i className="fa-solid fa-diagram-project"></i>
                     <h4>Completed Project</h4>
                     <p>100+</p>
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i className="fa-solid fa-square-envelope"></i>
+                    <h4>Client Satisfaction</h4>
+                    <p>5+</p>
                 </motion.div>
                 <motion.div id="card"
                     initial = {{opacity:0, y: 100}}
