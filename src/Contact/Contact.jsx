@@ -68,6 +68,7 @@ function Contact() {
                   required
                   type="text"
                   variant="outlined"
+                  style={{width: "100%"}}
                 />
               </Stack>
             </nav>

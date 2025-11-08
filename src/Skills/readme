@@ -1,0 +1,42 @@
+# Multiplayer 3D Builder
+
+## Features
+- Supabase Authentication (Email/Password + Google)
+- Real-time shared 3D scene (React Three Fiber)
+- Add/Move/Delete objects; live-sync via Supabase Realtime
+- Player presence & labels
+- Scene persistence (saved to Supabase)
+- Responsive design (desktop & mobile)
+- Deployed on Vercel
+
+## Setup
+
+1. Clone:
+   git clone https://github.com/<you>/<repo>.git
+
+2. Create Supabase project and run migrations (tables `objects`, `presence`)
+   - Use the SQL snippets in `/supabase/migrations/*.sql`
+
+3. Add environment variables:
+   - `NEXT_PUBLIC_SUPABASE_URL=your-supabase-url`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key`
+   - `NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY` (only for server-side admin operations; do not expose in client)
+
+4. Install:
+   npm install
+
+5. Run locally:
+   npm run dev
+
+6. Deployment:
+   - Add env vars to Vercel project settings and deploy.
+
+## How to run
+- Sign up or sign in with Google.
+- Create objects by clicking 'Add Cube' and clicking in the scene.
+- Drag an object to move; click delete to remove.
+- See other connected players in the player list.
+
+## Notes
+- Replace the Supabase keys in environment variables with your project's placeholders.
+- Security: enable RLS and policies as shown in `/supabase/policies.sql`.

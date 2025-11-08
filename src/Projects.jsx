@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import LikeButton from "./LikeButton"
 import "./Products.css";
 import { motion } from "framer-motion";
