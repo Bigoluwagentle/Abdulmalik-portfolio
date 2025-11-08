@@ -16,7 +16,7 @@ export default function LikeButton({ projectId }) {
       .from("projects_likes")
       .select("likes")
       .eq("project_id", projectId)
-      .maybeSingle(); // ✅ avoids throwing if not found
+      .maybeSingle();
 
     if (error) {
       console.error("Fetch error:", error);
@@ -26,7 +26,6 @@ export default function LikeButton({ projectId }) {
     if (data) {
       setLikes(data.likes);
     } else {
-      // No record? Create it
       const { error: insertError } = await supabase
         .from("projects_likes")
         .insert([{ project_id: projectId, likes: 0 }]);
@@ -51,7 +50,6 @@ export default function LikeButton({ projectId }) {
 
   try {
     if (!existing) {
-      // Try creating new like record
       const { data, error } = await supabase
         .from("projects_likes")
         .insert([{ project_id: projectId, likes: 1 }])
@@ -61,7 +59,6 @@ export default function LikeButton({ projectId }) {
       if (error) throw error;
       setLikes(data.likes);
     } else {
-      // If record exists, increment like
       const { data, error } = await supabase
         .from("projects_likes")
         .update({ likes: existing.likes + 1 })
