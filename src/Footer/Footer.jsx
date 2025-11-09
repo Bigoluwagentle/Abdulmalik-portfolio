@@ -64,9 +64,9 @@ function Footer(){
                     
                     <div id="card">
                         <h4>Social Media</h4>
-                        <a href="#" onClick={() => addUrl("https://github.com/Bigoluwagentle")} class="a"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
-                        <a href="#" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
+                        <a href="https://github.com/Bigoluwagentle" onClick={() => addUrl("https://github.com/Bigoluwagentle")} class="a"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/base.man.304047" onClick={() => addUrl("https://www.facebook.com/base.man.304047")} class="a"><img src={facebook} id="face" alt=""/></a>
+                        <a href="https://x.com/broskiprop94216" target="_blank" onClick={() => addUrl("https://x.com/broskiprop94216")} class="a"><img src={twitter} id="twi" alt=""/></a>
                     </div>
                     <div id="card">
                         <h4>Get in Touch</h4>

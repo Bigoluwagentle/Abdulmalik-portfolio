@@ -57,7 +57,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Audiophile} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Adiophile</h4>
                         <p>Tech: NEXTJS, TYPESCRIPT and CONVEX</p>
                         <nav>
@@ -73,7 +73,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Buycex} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Buycex Exchange</h4>
                         <p>Tech: NEXTJS and Framer Motion</p>
                         <p>Still ongoing</p>
@@ -90,7 +90,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Edu} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Adult-Edu</h4>
                         <p>Tech: NEXTJS and FIREBASE</p>
                         <nav>
@@ -124,7 +124,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Nutrition} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>AI NUTRITIONIST</h4>
                         <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
                         <nav>
@@ -142,7 +142,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Portfolio} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Car Repair</h4>
                         <p>Tech: REACT, Javascript, API & REACT NAVITE & EXPO</p>
                         <nav>
@@ -152,9 +152,6 @@ function Project(){
                         </nav>
                     </nav>
                 </motion.div>
-                
-
-                
 
                 <motion.div
                     variants={containerVariants}
@@ -162,7 +159,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Burger} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Burger Store</h4>
                         <p>Tech: REACT AND API</p>
                         <nav>
@@ -179,7 +176,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Eccomerce} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>E-CCOMERCE</h4>
                         <p>Tech: REACT, JSON AND JAVASCRIPT</p>
                         <nav>
@@ -196,7 +193,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Car} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Car Dealer</h4>
                         <p>Tech: REACT AND JAVASCRIPT</p>
                         <nav>
@@ -214,7 +211,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Recipe} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Recipe</h4>
                         <p>Tech: REACT AND API</p>
                         <nav>
@@ -230,7 +227,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Movie} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Movie Website</h4>
                         <p>Tech: HTML, API AND JAVASCRIPT</p>
                         <nav>
@@ -246,7 +243,7 @@ function Project(){
                     exit="exit"
                 >
                     <img src={Job} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Job-Board</h4>
                         <p>Tech: REACT, API AND JAVASCRIPT</p>
                         <nav>
@@ -263,7 +260,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Alquran} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Al-Quran Audio</h4>
                         <p>Tech: REACT AND API</p>
                         <nav>
@@ -279,7 +276,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Skin} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>Skin Care</h4>
                         <p>Tech: REACT</p>
                         <nav>
@@ -295,7 +292,7 @@ function Project(){
                     whileInView="visible"
                 >
                     <img src={Url} alt="" />
-                    <nav class="check">
+                    <nav className="check">
                         <h4>URL Shorten</h4>
                         <p>Tech: REACT AND JAVASCRIPT</p>
                         <nav>
@@ -310,19 +307,19 @@ function Project(){
             <summary>
                 <nav id="card">
                     <img src={thomas} alt=""/>
-                    <p class="text"><q>Abdulmalik is an outstanding frontend tutor. He simplifies complex topics, supports students with real projects, and inspires confidence in every session.</q></p>
+                    <p className="text"><q>Abdulmalik is an outstanding frontend tutor. He simplifies complex topics, supports students with real projects, and inspires confidence in every session.</q></p>
                     <li class="text">Ibrahim</li>
                     <p style={{fontSize: "12px"}} class="text">Geestack Academy</p>
                 </nav>
                 <nav id="card">
                     <img src={jennie} alt=""/>
-                    <p class="text"><q>He’s fast, reliable, and knows what he’s doing. Abdulmalik built a e ccomerce for our team in just a few days, and everything worked perfectly. Great communication and strong frontend skills.</q></p>
+                    <p className="text"><q>He’s fast, reliable, and knows what he’s doing. Abdulmalik built a e ccomerce for our team in just a few days, and everything worked perfectly. Great communication and strong frontend skills.</q></p>
                     <li class="text">Ayobami</li>
                     <p style={{fontSize: "12px"}} class="text">2Soft E-CCOMERCE</p>
                 </nav>
                 <nav id="card">
                     <img src={emily} alt=""/>
-                    <p class="text"><q>Abdulmalik exceeded our expectations. He took our Figma design and turned it into a pixel-perfect, mobile-responsive React app. His attention to detail, clean code structure, and smooth integration of APIs made the process effortless.</q></p>
+                    <p className="text"><q>Abdulmalik exceeded our expectations. He took our Figma design and turned it into a pixel-perfect, mobile-responsive React app. His attention to detail, clean code structure, and smooth integration of APIs made the process effortless.</q></p>
                     <li class="text">Joe Kith</li>
                     <p style={{fontSize: "12px"}} class="text">Marketing Director</p>
                 </nav>

@@ -26,15 +26,6 @@ function Contact() {
     });
   }, []);
 
-  // function addUrl(urlin) {
-  //   const link = document.createElement("a");
-  //   link.href = urlin;
-  //   link.target = "_blank";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // }
-
   const handleSubmit = (e) => {
     e.preventDefault();
 

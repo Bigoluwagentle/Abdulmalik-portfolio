@@ -9,7 +9,7 @@ export default function LikeButton({ projectId }) {
     const alreadyLiked = localStorage.getItem(`liked_${projectId}`);
     if (alreadyLiked) setLiked(true);
     fetchLikes();
-  }, []);
+  }, [fetchLikes, projectId]);
 
   async function fetchLikes() {
     const { data, error } = await supabase
