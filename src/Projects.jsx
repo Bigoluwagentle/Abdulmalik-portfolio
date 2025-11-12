@@ -16,7 +16,8 @@ import Recipe from "./img/Screenshot 2025-08-26 141603.png";
 import Alquran from "./img/Screenshot 2025-08-26 141924.png";
 import Skin from "./img/Screenshot 2025-08-26 142246.png";
 import Url from "./img/Screenshot 2025-08-26 142503.png";
-import Audiophile from "./img/audiophile.png"
+import Audiophile from "./img/audiophile.png";
+import Agro from "./img/agrolink.png";
 import Job from "./img/Screenshot 2025-08-27 061615.png";
 import Burger from "./img/Screenshot 2025-08-30 073238.png";
 import Creative from "./img/creative.png";
@@ -50,6 +51,22 @@ function Project(){
         <div id="allProject">
             <h2>PROJECTS</h2>
             <article id="projects" >
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
+                    <img src={Agro} alt="" />
+                    <nav className="check">
+                        <h4>AgroLink</h4>
+                        <p>Tech: NEXTJS, TYPESCRIPT, TAILWIND and FIREBASE</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://agro-links.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="jobboard" />
+                        </nav>
+                    </nav>
+                </motion.div>
                 <motion.div id="portfolio"
                     variants={containerVariants}
                     initial="hidden"
@@ -236,22 +253,7 @@ function Project(){
                         </nav>
                     </nav>
                 </motion.div>
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Job} alt="" />
-                    <nav className="check">
-                        <h4>Job-Board</h4>
-                        <p>Tech: REACT, API AND JAVASCRIPT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://mmm-job-board.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="jobboard" />
-                        </nav>
-                    </nav>
-                </motion.div>
+                
                 
                 
                 <motion.div 

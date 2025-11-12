@@ -55,7 +55,7 @@ function Skill(){
                     </nav>
                     <nav>
                         <i className="devicon-supabase-plain"></i>
-                        <h4>Spabase</h4>
+                        <h4>Supabase</h4>
                     </nav>
                     <nav>
                         <i className="devicon-git-plain"></i>
