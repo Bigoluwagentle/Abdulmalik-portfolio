@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
 import Buycex from "./img/Screenshot 2025-09-21 093257.png";
 import jennie from "./img/image-thomas.jpg";
+import DevConnect from "./img/devconnect.png";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/GRMM1yg5.png";
 import Nutrition from "./img/Screenshot 2025-08-28 095318.png";
@@ -15,10 +16,8 @@ import Car from "./img/Screenshot 2025-08-26 141251.png";
 import Recipe from "./img/Screenshot 2025-08-26 141603.png";
 import Alquran from "./img/Screenshot 2025-08-26 141924.png";
 import Skin from "./img/Screenshot 2025-08-26 142246.png";
-import Url from "./img/Screenshot 2025-08-26 142503.png";
 import Audiophile from "./img/audiophile.png";
 import Agro from "./img/agrolink.png";
-import Job from "./img/Screenshot 2025-08-27 061615.png";
 import Burger from "./img/Screenshot 2025-08-30 073238.png";
 import Creative from "./img/creative.png";
 import Edu from "./img/edu.png";
@@ -64,6 +63,22 @@ function Project(){
                         <nav>
                             <button onClick={() => addUrl("https://agro-links.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="jobboard" />
+                        </nav>
+                    </nav>
+                </motion.div>
+                <motion.div id="portfolio"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
+                    <img src={DevConnect} alt="DevConnect" />
+                    <nav className="check">
+                        <h4>DevConnect</h4>
+                        <p>Tech: NEXTJS, TYPESCRIPT, TAILWINDCSS and FIREBASE</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://devconnect-vert.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="urlshoten" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -128,7 +143,6 @@ function Project(){
                         <p>Tech:REACT,  JAVASCRIPT & REACT NAVITE, EXPO</p>
                         <nav>
                             <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            {/* <button onClick={() => addUrl(" https://expo.dev/artifacts/eas/amwkmkZ1J4WVruNJB4qf26.apk")}>Download App <i class="fa-solid fa-eye-slash"></i></button> */}
                             <LikeButton projectId="creative" />
 
                         </nav>
@@ -288,21 +302,7 @@ function Project(){
                     </nav>
                 </motion.div>
 
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Url} alt="" />
-                    <nav className="check">
-                        <h4>URL Shorten</h4>
-                        <p>Tech: REACT AND JAVASCRIPT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-url-shorten.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="urlshoten" />
-                        </nav>
-                    </nav>
-                </motion.div>
+                
 
             </article>
 

@@ -85,9 +85,13 @@ function Main(){
                         whileInView={{y:0}}
                         transition={{duration:1}}
                     > Whether I’m coding a new interface or mentoring students, my goal remains the same to build meaningful digital products that help <strong>businesses grow</strong> and <strong>empower people through technology</strong>.</motion.p>
-                    <button onClick={() => {
+                    <motion.button onClick={() => {
                         document.querySelector("#skil").click()
-                    }}>View my Skills</button>
+                    }}
+                        initial={{y:100}}
+                        whileInView={{y:0}}
+                        transition={{duration:1}}
+                    >View my Skills</motion.button>
                 </aside>
                 <aside id="card">
                     <img className="mypic" src={light} alt=""/>
