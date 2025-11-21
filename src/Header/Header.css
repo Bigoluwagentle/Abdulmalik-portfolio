@@ -7,9 +7,18 @@
         justify-content: space-between;
         color: white;
         width: 100%;
-        /* background-color: rgb(28, 26, 26); */
         background: black;
         top: 0;
+        z-index: 1;
+        > div{
+            > a{
+                text-decoration: none;
+
+                > h2{
+                    color: #ffffff;
+                }
+            }
+        }
         > div.links{
             > a{
                 color: white;

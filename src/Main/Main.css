@@ -1,7 +1,7 @@
 #main{
     margin-top: 100px;
     main{
-        margin-top: 60px;
+        margin-top: 50px;
         padding: 30px;
         display: flex;
         justify-content: space-between;
@@ -18,7 +18,8 @@
             }
             > p {
                 width: 80%;
-                line-height: 23px;
+                font-size: 1.1rem;
+                line-height: 25px;
                 margin-top: 20px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }

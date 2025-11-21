@@ -21,7 +21,7 @@ function Footer(){
                     initial={{y:100}}
                     whileInView={{y:0}}
                     transition={{duration:2}}
-                >Need a website that converts visitors into customers? Let’s connect.</motion.h4>
+                >Need a website that converts visitors into customers? <br /> Let’s connect.</motion.h4>
                 <motion.button
                     initial={{x:-100}}
                     whileInView={{x:0}}
@@ -85,7 +85,7 @@ function Footer(){
                 <Link id="project" to="/Projects"/>
                 <Link id="cont" to="/Contact"/>
             </footer>
-            <p>Design by Abdulmalik with Reactjs.</p>
+            <p>Design by Abdulmalik with React.js and Firebase.</p>
         </div>
     )
 }

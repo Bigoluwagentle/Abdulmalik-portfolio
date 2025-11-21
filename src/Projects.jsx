@@ -49,6 +49,10 @@ function Project(){
     return(
         <div id="allProject">
             <h2>PROJECTS</h2>
+            {/* <aside>
+                <button className="activeFocus">Web Projects</button>
+                <button>Mobile Projects</button>
+            </aside> */}
             <article id="projects" >
                 <motion.div id="portfolio"
                     variants={containerVariants}

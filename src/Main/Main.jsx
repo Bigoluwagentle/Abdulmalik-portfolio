@@ -35,16 +35,16 @@ function Main(){
                         whileInView = {{opacity:1}}
                         transition = {{duration:2}}
                         
-                    >Frontend & Mobile Developer | Tutor | Problem Solver</motion.h2>
+                    >Frontend & Mobile Developer | Problem Solver</motion.h2>
                     <motion.p
-                        initial = {{opacity:0, y: 100}}
-                        whileInView = {{opacity:1, y:0}}
-                        transition={{duration: 1, type: "spring", stiffness: 120}}
+                        initial = {{y: 100}}
+                        whileInView = {{y:0}}
+                        transition={{duration: 0.5,}}
                     >I help businesses grow online by building fast, modern, and responsive web and mobile apps. Using Next.js, TypeScript, React, React Native, and TailwindCSS, I create clean, high-performing digital experiences that attract customers and drive revenue.</motion.p>
                     <motion.button onClick={downloadPDF} 
-                        initial ={{y: 100, opacity:0}}
-                        whileInView={{y:0, opacity:1, scale:1}}
-                        transition={{duration:2, type: "spring", stiffness: 200}}
+                        initial ={{scale:0}}
+                        whileInView={{scale:1}}
+                        transition={{duration:2, delay:0.3, type: "spring", stiffness: 120}}
                         whileHover = {{scale:1.1}}
                     >
                         <i className="fa-solid fa-download"></i>
@@ -52,9 +52,9 @@ function Main(){
                         
                     </motion.button>
                     <motion.button 
-                        initial ={{y: 100, opacity:0}}
-                        whileInView={{y:0, opacity:1, scale:1}}
-                        transition={{duration:2, type: "spring", stiffness: 200}}
+                        initial ={{scale:0}}
+                        whileInView={{scale:1}}
+                        transition={{duration:2, delay:0.5, type: "spring", stiffness: 120}}
                         whileHover = {{scale:1.1}}
                         onClick={() => {
                             document.querySelector("#proj").click()
@@ -70,25 +70,25 @@ function Main(){
                 <aside className="about" id="about">
                     <h2 className="p">ABOUT ME</h2>
                     <motion.p
-                        initial={{y:100}}
+                        initial={{y:50}}
                         whileInView={{y:0}}
                         transition={{duration:1}}
-                    >I’m a <strong> Frontend and Mobile App Developer </strong> with a passion for building modern, responsive, and user-focused digital experiences. I specialize in creating sleek, high-performance interfaces using <strong> Next.js, React, React Native, Vue, Tailwind CSS, and TypeScript. </strong></motion.p>
+                    >I’m a <strong> Frontend and Mobile App Developer </strong> with a passion for building modern, responsive, and user-focused digital experiences. I specialize in creating sleek, high-performance interfaces using <strong> Next.js, React, React Native, Vue, Angular, Tailwind CSS, and TypeScript. </strong></motion.p>
 
                     <motion.p
-                        initial={{y:100}}
+                        initial={{y:50}}
                         whileInView={{y:0}}
                         transition={{duration:1}}
                     > Beyond development, I’m also a <strong>Tutor</strong> who enjoys breaking down complex frontend concepts into simple, practical lessons. Teaching has strengthened my ability to write <strong>clean, scalable, and maintainable code</strong>, while inspiring others to grow in tech.</motion.p>
                     <motion.p
-                        initial={{y:100}}
+                        initial={{y:50}}
                         whileInView={{y:0}}
                         transition={{duration:1}}
                     > Whether I’m coding a new interface or mentoring students, my goal remains the same to build meaningful digital products that help <strong>businesses grow</strong> and <strong>empower people through technology</strong>.</motion.p>
                     <motion.button onClick={() => {
                         document.querySelector("#skil").click()
                     }}
-                        initial={{y:100}}
+                        initial={{y:50}}
                         whileInView={{y:0}}
                         transition={{duration:1}}
                     >View my Skills</motion.button>
@@ -125,6 +125,24 @@ function Main(){
                     <i className="fa-solid fa-square-envelope"></i>
                     <h4>Client Satisfaction</h4>
                     <p>5+</p>
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i className="fa-solid fa-square-envelope"></i>
+                    <h4>Commit</h4>
+                    <p>Over 200+ Commit</p>
+                </motion.div>
+                <motion.div id="card"
+                    initial = {{opacity:0, y: 100}}
+                    whileInView={{opacity:1, y:0}}
+                    transition={{duration: 1, type: "spring", stiffness: 200}}
+                >
+                    <i className="fa-solid fa-square-envelope"></i>
+                    <h4>Problem Solved</h4>
+                    <p>Over 10+ Problem Solved</p>
                 </motion.div>
                 <motion.div id="card"
                     initial = {{opacity:0, y: 100}}
@@ -200,9 +218,9 @@ function Main(){
             <div id="experince">
                 <section>
                     <motion.aside
-                        initial={{y:-100, opacity:0}}
+                        initial={{y:-10, opacity:0}}
                         whileInView={{y:0, opacity:1}}
-                        transition={{duration:1}}
+                        transition={{duration:0.3}}
                     >
                         <h4>Frontend Developer</h4>
                         <p>GEEGSTACK ACADEMY</p>
@@ -215,9 +233,9 @@ function Main(){
                 </section>
                 <section>
                     <motion.aside
-                        initial={{y:-100, opacity:0}}
+                        initial={{y:-10, opacity:0}}
                         whileInView={{y:0, opacity:1}}
-                        transition={{duration:1}}
+                        transition={{duration:0.4}}
                     >
                         <h4>Mobile App Developer</h4>
                         <li>- Developed a mobile application for hiring professional handymen.</li>
@@ -228,9 +246,9 @@ function Main(){
                 </section>
                 <section>
                     <motion.aside
-                        initial={{y:100, opacity:0}}
+                        initial={{y:10, opacity:0}}
                         whileInView={{y:0, opacity:1}}
-                        transition={{duration:1}}
+                        transition={{duration:0.4}}
                     >
                         <h4>Frontend Developer</h4>
                         <p><strong>TOO SOFT COLLECTION</strong> — Freelance</p>
@@ -241,9 +259,9 @@ function Main(){
                 </section>
                 <section>
                     <motion.aside
-                        initial={{y:-100, opacity:0}}
+                        initial={{y:-10, opacity:0}}
                         whileInView={{y:0, opacity:1}}
-                        transition={{duration:1}}
+                        transition={{duration:0.4}}
                     >
                         <h4>Frontend Developer</h4>
                         <p><strong>OYAB AUTOS</strong> — Freelance</p>

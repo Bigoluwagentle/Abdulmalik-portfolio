@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {motion} from "framer-motion";
 
 function Header() {
@@ -36,17 +36,21 @@ function Header() {
     <div id="header">
       <header id="card">
         <div className="head" id="card">
+          <Link to="/">
           <motion.h2
-            initial = {{opacity:0, y: 100}}
+            initial = {{opacity:0, y: -50}}
             whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 1}}
-          >ABDULMALIK</motion.h2>
+            transition={{duration: 0.5}}
+          >
+              ABDULMALIK
+            </motion.h2>
+            </Link>
         </div>
 
         <motion.div className="links" id="card"
           initial = {{opacity: 0, x: 100}}
           whileInView={{opacity:1, x:0}}
-          transition={{duration: 1.5, delay: 0.5}}
+          transition={{duration: 1}}
         >
           <NavLink to="/" className="a">
             ABOUT
