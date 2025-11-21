@@ -30,7 +30,7 @@ function Skill(){
                         <h4>EXPO</h4>
                     </nav>
                     <nav>
-                        {/* <i className="devicon-vuejs-plain"></i> */}
+                        <i class="devicon-angularjs-plain"></i>
                         <h4>ANGULAR</h4>
                     </nav>
                     <nav>

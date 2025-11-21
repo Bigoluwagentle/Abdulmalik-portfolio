@@ -61,6 +61,7 @@ function Main(){
                         }}
                     >
                         View My Work
+                        <i style={{marginLeft:"10px"}} class="fa-solid fa-angle-right"></i>
                     </motion.button>
                 </section>
                 <img src={Illustration} alt="illustrtion" />
@@ -91,7 +92,9 @@ function Main(){
                         initial={{y:50}}
                         whileInView={{y:0}}
                         transition={{duration:1}}
-                    >View my Skills</motion.button>
+                    >View my Skills
+                    <i style={{marginLeft:"10px"}} class="fa-solid fa-angle-right"></i>
+                    </motion.button>
                 </aside>
                 <aside id="card">
                     <img className="mypic" src={light} alt=""/>
@@ -122,7 +125,7 @@ function Main(){
                     whileInView={{opacity:1, y:0}}
                     transition={{duration: 1, type: "spring", stiffness: 200}}
                 >
-                    <i className="fa-solid fa-square-envelope"></i>
+                    <i class="fa-solid fa-fire"></i>
                     <h4>Client Satisfaction</h4>
                     <p>5+</p>
                 </motion.div>
@@ -131,7 +134,7 @@ function Main(){
                     whileInView={{opacity:1, y:0}}
                     transition={{duration: 1, type: "spring", stiffness: 200}}
                 >
-                    <i className="fa-solid fa-square-envelope"></i>
+                    <i class="fa-solid fa-code-commit"></i>
                     <h4>Commit</h4>
                     <p>Over 200+ Commit</p>
                 </motion.div>
@@ -140,7 +143,7 @@ function Main(){
                     whileInView={{opacity:1, y:0}}
                     transition={{duration: 1, type: "spring", stiffness: 200}}
                 >
-                    <i className="fa-solid fa-square-envelope"></i>
+                    <i class="fa-brands fa-resolving"></i>
                     <h4>Problem Solved</h4>
                     <p>Over 10+ Problem Solved</p>
                 </motion.div>
