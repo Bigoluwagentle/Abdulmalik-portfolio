@@ -63,7 +63,7 @@ function Project(){
                     <img src={Agro} alt="" />
                     <nav className="check">
                         <h4>AgroLink</h4>
-                        <p>Tech: NEXTJS, TYPESCRIPT, TAILWIND and FIREBASE</p>
+                        <p>A full-stack platform that connects farmers directly to buyers by removing the middleman. Farmers can list their products, and buyers can purchase them instantly. Built with <b> Next.js, TypeScript, Tailwind CSS, and Firebase</b> for real-time data, authentication, and secure storage.</p>
                         <nav>
                             <button onClick={() => addUrl("https://agro-links.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="jobboard" />
@@ -79,7 +79,7 @@ function Project(){
                     <img src={DevConnect} alt="DevConnect" />
                     <nav className="check">
                         <h4>DevConnect</h4>
-                        <p>Tech: NEXTJS, TYPESCRIPT, TAILWINDCSS and FIREBASE</p>
+                        <p>DevConnect is a full-stack platform that connects developers for collaboration, real-time chat, project discussions, and access to the latest tech news. Built with <b> Next.js, TypeScript, Tailwind CSS, and Firebase</b>, it provides seamless authentication, live messaging, and dynamic content updates</p>
                         <nav>
                             <button onClick={() => addUrl("https://devconnect-vert.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="urlshoten" />
@@ -95,7 +95,7 @@ function Project(){
                     <img src={Audiophile} alt="" />
                     <nav className="check">
                         <h4>Adiophile</h4>
-                        <p>Tech: NEXTJS, TYPESCRIPT and CONVEX</p>
+                        <p>An e-commerce platform for high-end audio products, featuring categories like headphones, earphones, and speakers. Built with <b> Next.js and TypeScript</b>, and powered by Convex for real-time product management, secure data handling, and a smooth checkout experience.</p>
                         <nav>
                             <button onClick={() => addUrl("https://audiophile-539a.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="adiophile" />
@@ -111,7 +111,7 @@ function Project(){
                     <img src={Buycex} alt="" />
                     <nav className="check">
                         <h4>Buycex Exchange</h4>
-                        <p>Tech: NEXTJS and Framer Motion</p>
+                        <p>Buycex is a Web3-powered platform designed for seamless crypto asset swapping with a smooth, modern UI. Built with <b>Next.js and enhanced with Framer Motion for elegant </b>, interactive animations that elevate the user experience.</p>
                         <p>Still ongoing</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
@@ -128,7 +128,7 @@ function Project(){
                     <img src={Edu} alt="" />
                     <nav className="check">
                         <h4>Adult-Edu</h4>
-                        <p>Tech: NEXTJS and FIREBASE</p>
+                        <p>Adult-Edu is a learning platform designed to help adults access educational resources and improve their skills. Built with <b> Next.js and Firebase</b>, it provides secure authentication, smooth content delivery, and an easy-to-use interface for continuous learning.</p>
                         <nav>
                             <button onClick={() => addUrl("https://adult-edu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="adult" />
@@ -144,7 +144,7 @@ function Project(){
                     <img src={Creative} alt="" />
                     <nav className="check">
                         <h4>Creative Jobboard</h4>
-                        <p>Tech:REACT,  JAVASCRIPT & REACT NAVITE, EXPO</p>
+                        <p>Creative Jobboard is a modern platform for discovering and listing creative industry jobs. Built with <b> React and JavaScript, and enhanced with Framer Motion for smooth</b>, engaging animations that improve the browsing experience.</p>
                         <nav>
                             <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="creative" />
