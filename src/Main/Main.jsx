@@ -35,7 +35,7 @@ function Main(){
                         whileInView = {{opacity:1}}
                         transition = {{duration:2}}
                         
-                    >Frontend & Mobile Developer | Problem Solver</motion.h2>
+                    >Frontend & Mobile Developer</motion.h2>
                     <motion.p
                         initial = {{y: 100}}
                         whileInView = {{y:0}}
