@@ -16,10 +16,10 @@ function Main(){
         document.body.removeChild(link);
     }
     function downloadPDF() {
-        const pdfUrl = 'Abdulmalik_CV.pdf';
+        const pdfUrl = 'Abdulmalik-CV.pdf';
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'Abdulmalik_CV.pdf';
+        link.download = 'Abdulmalik-CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

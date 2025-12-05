@@ -63,7 +63,10 @@ function Project(){
                     <img src={Agro} alt="" />
                     <nav className="check">
                         <h4>AgroLink</h4>
-                        <p>A full-stack platform that connects farmers directly to buyers by removing the middleman. Farmers can list their products, and buyers can purchase them instantly. Built with <b> Next.js, TypeScript, Tailwind CSS, and Firebase</b> for real-time data, authentication, and secure storage.</p>
+                        <span>Problem</span>
+                        <p>Farmers often receive low profits due to middlemen, while buyers struggle to access fresh produce directly from trusted sources. This creates an inefficient and costly supply chain.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I built a full-stack platform that connects farmers directly to buyers, allowing farmers to list products and buyers to purchase instantly. Using <strong>Next.js, TypeScript, Tailwind CSS, and Firebase,</strong> the platform provides real-time data, secure authentication, and a fast, seamless experience—giving farmers fairer prices and buyers better access to fresh goods.</p>
                         <nav>
                             <button onClick={() => addUrl("https://agro-links.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="jobboard" />
@@ -79,7 +82,10 @@ function Project(){
                     <img src={DevConnect} alt="DevConnect" />
                     <nav className="check">
                         <h4>DevConnect</h4>
-                        <p>DevConnect is a full-stack platform that connects developers for collaboration, real-time chat, project discussions, and access to the latest tech news. Built with <b> Next.js, TypeScript, Tailwind CSS, and Firebase</b>, it provides seamless authentication, live messaging, and dynamic content updates</p>
+                        <span>Problem</span>
+                        <p>Developers often struggle to find collaborators, communicate in real time, and stay updated with the latest tech news—all in one place.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I built DevConnect, a full-stack platform where developers can connect, chat in real time, discuss projects, and access up-to-date tech news. Using <strong> Next.js, TypeScript, Tailwind CSS, and Firebase,</strong> it delivers seamless authentication, live messaging, and dynamic content updates in a single, easy-to-use hub.</p>
                         <nav>
                             <button onClick={() => addUrl("https://devconnect-vert.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="urlshoten" />
@@ -95,7 +101,10 @@ function Project(){
                     <img src={Audiophile} alt="" />
                     <nav className="check">
                         <h4>Adiophile</h4>
-                        <p>An e-commerce platform for high-end audio products, featuring categories like headphones, earphones, and speakers. Built with <b> Next.js and TypeScript</b>, and powered by Convex for real-time product management, secure data handling, and a smooth checkout experience.</p>
+                        <span>Problem</span>
+                        <p>Audiophiles often struggle to find a reliable, dedicated platform for high-end audio products with accurate listings, secure data handling, and a smooth shopping experience.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I created Adiophile, an e-commerce platform focused on premium audio gear—including headphones, earphones, and speakers. Built with <strong> Next.js and TypeScript and powered by Convex,</strong> it offers real-time product management, secure data operations, and a fast, seamless checkout experience tailored for audio enthusiasts.</p>
                         <nav>
                             <button onClick={() => addUrl("https://audiophile-539a.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="adiophile" />
@@ -111,8 +120,10 @@ function Project(){
                     <img src={Buycex} alt="" />
                     <nav className="check">
                         <h4>Buycex Exchange</h4>
-                        <p>Buycex is a Web3-powered platform designed for seamless crypto asset swapping with a smooth, modern UI. Built with <b>Next.js and enhanced with Framer Motion for elegant </b>, interactive animations that elevate the user experience.</p>
-                        <p>Still ongoing</p>
+                        <span>Problem</span>
+                        <p>Many crypto users face slow, confusing, or unreliable platforms when trying to swap digital assets, often lacking smooth UI and intuitive interactions.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I’m building Buycex, a Web3-powered exchange focused on fast, seamless crypto asset swapping. Developed with <strong> Next.js and enhanced using Framer Motion,</strong> it delivers a clean, modern interface with fluid, interactive animations for a better user experience. (Project still in progress.)</p>
                         <nav>
                             <button onClick={() => addUrl("https://abdulmalik-buycex-14nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="buycex" />
@@ -128,7 +139,10 @@ function Project(){
                     <img src={Edu} alt="" />
                     <nav className="check">
                         <h4>Adult-Edu</h4>
-                        <p>Adult-Edu is a learning platform designed to help adults access educational resources and improve their skills. Built with <b> Next.js and Firebase</b>, it provides secure authentication, smooth content delivery, and an easy-to-use interface for continuous learning.</p>
+                        <span>Problem</span>
+                        <p>Many adults struggle to access flexible, easy-to-use learning platforms that support skill improvement while fitting into busy schedules.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I built Adult-Edu, a learning platform that provides adults with accessible educational resources and a simple, intuitive interface for continuous growth. Developed with <strong> Next.js and Firebase,</strong> it offers secure authentication, smooth content delivery, and a user-friendly experience designed for lifelong learning</p>
                         <nav>
                             <button onClick={() => addUrl("https://adult-edu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="adult" />
@@ -144,7 +158,10 @@ function Project(){
                     <img src={Creative} alt="" />
                     <nav className="check">
                         <h4>Creative Jobboard</h4>
-                        <p>Creative Jobboard is a modern platform for discovering and listing creative industry jobs. Built with <b> React and JavaScript, and enhanced with Framer Motion for smooth</b>, engaging animations that improve the browsing experience.</p>
+                        <span>Problem</span>
+                        <p>Creative professionals often struggle to find a dedicated space to discover industry-specific job opportunities with a clean, engaging browsing experience.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I built Creative Jobboard, a modern platform for listing and discovering creative industry jobs. Developed with <strong> React and JavaScript,</strong> and enhanced using Framer Motion, it delivers smooth, engaging animations and an intuitive interface for easier job exploration.</p>
                         <nav>
                             <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="creative" />
@@ -161,45 +178,13 @@ function Project(){
                     <img src={Nutrition} alt="" />
                     <nav className="check">
                         <h4>AI NUTRITIONIST</h4>
-                        <p>Tech: HTML, OpenAI API, JAVASCRIPT</p>
+                        <span>Problem</span>
+                        <p>Many people struggle to understand what to eat for their specific goals, often lacking quick, personalized nutrition guidance.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I created AI Nutritionist, a simple tool that provides instant, AI-powered meal and nutrition recommendations based on user input. Built with <strong> HTML, JavaScript, and the OpenAI API,</strong> it delivers fast, accessible diet guidance through an easy-to-use interface.</p>
                         <nav>
                             <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="nutritionist" />
-                        </nav>
-                    </nav>
-                </motion.div>
-                
-
-                <motion.div id="portfolio"
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Portfolio} alt="" />
-                    <nav className="check">
-                        <h4>Car Repair</h4>
-                        <p>Tech: REACT, Javascript, API & REACT NAVITE & EXPO</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-car-repair.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            {/* <button onClick={() => addUrl("https://expo.dev/artifacts/eas/vEkW1kgnPrPK6GxYdbhjbE.apk")}><i class="fa-brands fa-android"></i> Download App</button> */}
-                            <LikeButton projectId="carrepair" />
-                        </nav>
-                    </nav>
-                </motion.div>
-
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Burger} alt="" />
-                    <nav className="check">
-                        <h4>Burger Store</h4>
-                        <p>Tech: REACT AND API</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://code-with-faith-burger-home.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="burger" />
                         </nav>
                     </nav>
                 </motion.div>
@@ -213,101 +198,16 @@ function Project(){
                     <img src={Eccomerce} alt="" />
                     <nav className="check">
                         <h4>E-CCOMERCE</h4>
-                        <p>Tech: REACT, JSON AND JAVASCRIPT</p>
+                        <span>Problem</span>
+                        <p>Shoppers often need a simple and reliable platform to browse products, view details, and make purchases without slow or confusing interfaces.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I built a clean and user-friendly E-Commerce platform that lets users browse items, view product data, and shop smoothly. Developed with <strong> React, JavaScript, and JSON,</strong> it delivers fast rendering, organized product management, and an intuitive shopping experience.</p>
                         <nav>
                             <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="ecommerce" />
                         </nav>
                     </nav>
                 </motion.div>
-
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Car} alt="" />
-                    <nav className="check">
-                        <h4>Car Dealer</h4>
-                        <p>Tech: REACT AND JAVASCRIPT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-car.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="cardealer" />
-                        </nav>
-                    </nav>
-                </motion.div>
-
-            
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Recipe} alt="" />
-                    <nav className="check">
-                        <h4>Recipe</h4>
-                        <p>Tech: REACT AND API</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-recipe.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="recipe" />
-                        </nav>
-                    </nav>
-                </motion.div>
-                
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Movie} alt="" />
-                    <nav className="check">
-                        <h4>Movie Website</h4>
-                        <p>Tech: HTML, API AND JAVASCRIPT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-movie.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="movie" />
-                        </nav>
-                    </nav>
-                </motion.div>
-                
-                
-                
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Alquran} alt="" />
-                    <nav className="check">
-                        <h4>Al-Quran Audio</h4>
-                        <p>Tech: REACT AND API</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://abdulmalik-phi.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="alquran" />
-                        </nav>
-                    </nav>
-                </motion.div>
-
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Skin} alt="" />
-                    <nav className="check">
-                        <h4>Skin Care</h4>
-                        <p>Tech: REACT</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://skin-care-opal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="skincare" />
-                        </nav>
-                    </nav>
-                </motion.div>
-
-                
-
             </article>
 
             <summary>

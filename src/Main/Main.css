@@ -45,6 +45,9 @@
                     margin-left: 20px;
                     background-color: #F2F2F2;
                     color: #134455;
+                    &:hover{
+                        color: white;
+                    }
                 }
             }
         }
