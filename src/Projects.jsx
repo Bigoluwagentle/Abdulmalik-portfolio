@@ -3,22 +3,15 @@ import LikeButton from "./LikeButton"
 import "./Products.css";
 import { motion } from "framer-motion";
 import Footer from "./Footer/Footer";
-import Portfolio from "./img/Screenshot 2025-09-20 000341.png";
 import Buycex from "./img/Screenshot 2025-09-21 093257.png";
 import jennie from "./img/image-thomas.jpg";
 import DevConnect from "./img/devconnect.png";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/GRMM1yg5.png";
 import Nutrition from "./img/Screenshot 2025-08-28 095318.png";
-import Movie from "./img/Screenshot 2025-08-26 135936.png";
-import Eccomerce from "./img/Screenshot 2025-08-26 140836.png";
-import Car from "./img/Screenshot 2025-08-26 141251.png";
-import Recipe from "./img/Screenshot 2025-08-26 141603.png";
-import Alquran from "./img/Screenshot 2025-08-26 141924.png";
-import Skin from "./img/Screenshot 2025-08-26 142246.png";
+import CareerBuilder from "./img/careerbuilder.png";
 import Audiophile from "./img/audiophile.png";
 import Agro from "./img/agrolink.png";
-import Burger from "./img/Screenshot 2025-08-30 073238.png";
 import Creative from "./img/creative.png";
 import Edu from "./img/edu.png";
 
@@ -54,6 +47,25 @@ function Project(){
                 <button>Mobile Projects</button>
             </aside> */}
             <article id="projects" >
+                <motion.div 
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    exit="exit"
+                >
+                    <img src={CareerBuilder} alt="CareerBuilder" />
+                    <nav className="check">
+                        <h4>AI Career Builder</h4>
+                        <span>Problem</span>
+                        <p>Many people struggle to create professional resumes and personal portfolios due to confusing tools, limited customization options, and a lack of guidance. Without design skills or clear content direction, users often feel overwhelmed and unable to build strong career materials.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>I created an intuitive Resume & Portfolio Builder using <strong>Next.js, TypeScript, Tailwind, Firebase, and Gemini AI.</strong> It lets users generate content with AI, customize layouts, and securely save their work delivering a fast, smooth, and modern creation experience.</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://ai-career-builder-teal.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="ecommerce" />
+                        </nav>
+                    </nav>
+                </motion.div>
                 <motion.div id="portfolio"
                     variants={containerVariants}
                     initial="hidden"
@@ -189,25 +201,7 @@ function Project(){
                     </nav>
                 </motion.div>
 
-                <motion.div 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    exit="exit"
-                >
-                    <img src={Eccomerce} alt="" />
-                    <nav className="check">
-                        <h4>E-CCOMERCE</h4>
-                        <span>Problem</span>
-                        <p>Shoppers often need a simple and reliable platform to browse products, view details, and make purchases without slow or confusing interfaces.</p>
-                        <span style={{color: "green"}}>Solution</span>
-                        <p>I built a clean and user-friendly E-Commerce platform that lets users browse items, view product data, and shop smoothly. Developed with <strong> React, JavaScript, and JSON,</strong> it delivers fast rendering, organized product management, and an intuitive shopping experience.</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://too-soft-1xtd.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="ecommerce" />
-                        </nav>
-                    </nav>
-                </motion.div>
+                
             </article>
 
             <summary>
