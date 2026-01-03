@@ -40,18 +40,10 @@ function Footer(){
                     
                     <div id="card">
                         <h4>Quick Links</h4>
-                        <a href="#" class="a" onClick={() => {
-                            document.querySelector("#about").click();
-                        }}>ABOUT</a>
-                        <a href="#" class="a" onClick={() => {
-                            document.querySelector("#skill").click();
-                        }}>SKILLS</a>
-                        <a href="#" class="a" onClick={() => {
-                            document.querySelector("#project").click();
-                        }}>PROJECTS</a>
-                        <a href="#" class="a" onClick={() => {
-                            document.querySelector("#cont").click();
-                        }}>CONTACT</a>
+                        <a href="#" class="a" onClick={() => {document.querySelector("#about").click();}}>ABOUT</a>
+                        <a href="#" class="a" onClick={() => {document.querySelector("#skill").click();}}>SKILLS</a>
+                        <a href="#" class="a" onClick={() => {document.querySelector("#project").click();}}>PROJECTS</a>
+                        <a href="#" class="a" onClick={() => {document.querySelector("#cont").click();}}>CONTACT</a>
                     </div>
 
                     <div>
@@ -70,14 +62,8 @@ function Footer(){
                     </div>
                     <div id="card">
                         <h4>Get in Touch</h4>
-                        <button onClick={() => addUrl("mailto:abdrosheedabdmalikadgmail.com")}>
-                            <i class="fa-solid fa-envelope"></i>
-                            Email
-                        </button>
-                        
-                        <button onClick={() => addUrl("https://wa.me/9076956531")}>
-                            Whatsapp
-                        </button>
+                        <button onClick={() => addUrl("mailto:abdrosheedabdmalikadgmail.com")}><i class="fa-solid fa-envelope"></i>Email</button>
+                        <button onClick={() => addUrl("https://wa.me/9076956531")}>Whatsapp</button>
                     </div>
                 </section>
                 <Link id="about" to="/"/>

@@ -8,11 +8,11 @@ import jennie from "./img/image-thomas.jpg";
 import DevConnect from "./img/devconnect.png";
 import emily from "./img/image-emily.jpg";
 import thomas from "./img/GRMM1yg5.png";
-import Nutrition from "./img/Screenshot 2025-08-28 095318.png";
+import Nutrition from "./img/coach.png";
 import CareerBuilder from "./img/careerbuilder.png";
 import Audiophile from "./img/audiophile.png";
 import Agro from "./img/agrolink.png";
-import Creative from "./img/creative.png";
+import Creative from "./img/skill.png";
 import Edu from "./img/edu.png";
 
 function Project(){
@@ -42,11 +42,46 @@ function Project(){
     return(
         <div id="allProject">
             <h2>PROJECTS</h2>
-            {/* <aside>
-                <button className="activeFocus">Web Projects</button>
-                <button>Mobile Projects</button>
-            </aside> */}
+            
             <article id="projects" >
+                <motion.div id="ai" 
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <img src={Nutrition} alt="" />
+                    <nav className="check">
+                        <h4>CoachCam</h4>
+                        <span>Problem</span>
+                        <p>Coaches spend hours manually reviewing training and match videos, making analysis slow, subjective, and inefficient. This delays feedback and limits data-driven performance improvement.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>CoachCam is an AI-powered video analysis platform that automatically analyzes sports footage and provides real-time, actionable insights, helping coaches make faster, smarter decisions and improve athlete performance.</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://coach-cam-nu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="nutritionist" />
+                        </nav>
+                    </nav>
+                </motion.div>
+
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                >
+                    <img src={Creative} alt="" />
+                    <nav className="check">
+                        <h4>SkillBridge</h4>
+                        <span>Problem</span>
+                        <p>Finding reliable skilled workers is often difficult, time-consuming, and risky due to lack of trust, verification, and clear information.</p>
+                        <span style={{color: "green"}}>Solution</span>
+                        <p>A community-based platform that connects users with verified skilled professionals—such as plumbers, electricians, and mechanics—making it easy to find trusted experts and get quality work done.</p>
+                        <nav>
+                            <button onClick={() => addUrl("https://skill-bridge-liard-nine.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
+                            <LikeButton projectId="creative" />
+
+                        </nav>
+                    </nav>
+                </motion.div>
                 <motion.div 
                     variants={containerVariants}
                     initial="hidden"
@@ -158,45 +193,6 @@ function Project(){
                         <nav>
                             <button onClick={() => addUrl("https://adult-edu.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
                             <LikeButton projectId="adult" />
-                        </nav>
-                    </nav>
-                </motion.div>
-
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Creative} alt="" />
-                    <nav className="check">
-                        <h4>Creative Jobboard</h4>
-                        <span>Problem</span>
-                        <p>Creative professionals often struggle to find a dedicated space to discover industry-specific job opportunities with a clean, engaging browsing experience.</p>
-                        <span style={{color: "green"}}>Solution</span>
-                        <p>I built Creative Jobboard, a modern platform for listing and discovering creative industry jobs. Developed with <strong> React and JavaScript,</strong> and enhanced using Framer Motion, it delivers smooth, engaging animations and an intuitive interface for easier job exploration.</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://creative-jobboard.vercel.app/")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="creative" />
-
-                        </nav>
-                    </nav>
-                </motion.div>
-                
-                <motion.div id="ai" 
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                >
-                    <img src={Nutrition} alt="" />
-                    <nav className="check">
-                        <h4>AI NUTRITIONIST</h4>
-                        <span>Problem</span>
-                        <p>Many people struggle to understand what to eat for their specific goals, often lacking quick, personalized nutrition guidance.</p>
-                        <span style={{color: "green"}}>Solution</span>
-                        <p>I created AI Nutritionist, a simple tool that provides instant, AI-powered meal and nutrition recommendations based on user input. Built with <strong> HTML, JavaScript, and the OpenAI API,</strong> it delivers fast, accessible diet guidance through an easy-to-use interface.</p>
-                        <nav>
-                            <button onClick={() => addUrl("https://nutritionapp-ze9g.vercel.app")}>View Project <i class="fa-solid fa-eye-slash"></i></button>
-                            <LikeButton projectId="nutritionist" />
                         </nav>
                     </nav>
                 </motion.div>
